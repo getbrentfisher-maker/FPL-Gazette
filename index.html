@@ -1,0 +1,561 @@
+<title>The Messi Cup Gazette</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;0,8..60,700;1,8..60,400&family=IBM+Plex+Mono:wght@500;600&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --paper-l: #eae6d9;
+    --paper-l-raised: #f4f1e6;
+    --ink-l: #1c1812;
+    --ink-soft-l: #6b6353;
+    --rule-l: #c9c2ab;
+    --red-l: #a3271f;
+    --red-bg-l: #f1ddd8;
+    --green-l: #2f6b40;
+    --green-bg-l: #e0e8dc;
+
+    --bg: var(--paper-l);
+    --paper: var(--paper-l-raised);
+    --ink: var(--ink-l);
+    --ink-soft: var(--ink-soft-l);
+    --rule: var(--rule-l);
+    --masthead-red: var(--red-l);
+    --tag-bg: var(--red-bg-l);
+    --stat-green: var(--green-l);
+    --stat-green-bg: var(--green-bg-l);
+    --you-bg: #ece3c9;
+    --you-edge: #b3a271;
+  }
+
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --bg: #16130f;
+      --paper: #1d1a14;
+      --ink: #ece6d8;
+      --ink-soft: #a89e88;
+      --rule: #3a3427;
+      --masthead-red: #d1685f;
+      --tag-bg: #382220;
+      --stat-green: #7fbf8e;
+      --stat-green-bg: #1f2c20;
+      --you-bg: #2c2718;
+      --you-edge: #6b5c34;
+    }
+  }
+  :root[data-theme="dark"] {
+    --bg: #16130f;
+    --paper: #1d1a14;
+    --ink: #ece6d8;
+    --ink-soft: #a89e88;
+    --rule: #3a3427;
+    --masthead-red: #d1685f;
+    --tag-bg: #382220;
+    --stat-green: #7fbf8e;
+    --stat-green-bg: #1f2c20;
+    --you-bg: #2c2718;
+    --you-edge: #6b5c34;
+  }
+
+  * { box-sizing: border-box; }
+
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--ink);
+    font-family: "Source Serif 4", Georgia, "Times New Roman", serif;
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  .sheet {
+    max-width: 720px;
+    margin: 0 auto;
+    padding: 28px 22px 70px;
+  }
+
+  /* Masthead */
+  .masthead { text-align: center; }
+  .edition-line {
+    font-family: "IBM Plex Mono", ui-monospace, monospace;
+    font-size: 11px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--ink-soft);
+  }
+  .nameplate {
+    font-family: "Anton", "Arial Narrow", sans-serif;
+    font-size: clamp(40px, 9vw, 62px);
+    letter-spacing: 0.01em;
+    line-height: 0.95;
+    margin: 8px 0 6px;
+    text-wrap: balance;
+  }
+  .rule-thick { height: 4px; background: var(--ink); margin: 14px 0 6px; }
+  .rule-thin { height: 1px; background: var(--rule); margin: 0 0 14px; }
+  .standfirst {
+    font-style: italic;
+    font-size: 18px;
+    color: var(--ink);
+    margin: 0 0 4px;
+  }
+  .dateline {
+    font-family: "IBM Plex Mono", ui-monospace, monospace;
+    font-size: 10.5px;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--ink-soft);
+    margin-top: 8px;
+  }
+
+  h2.section-head {
+    font-family: "Anton", "Arial Narrow", sans-serif;
+    font-size: 22px;
+    letter-spacing: 0.02em;
+    margin: 44px 0 14px;
+    padding-bottom: 8px;
+    border-bottom: 3px solid var(--ink);
+  }
+
+  /* Entries */
+  .entry {
+    padding: 20px 0;
+    border-bottom: 1px solid var(--rule);
+  }
+  .entry:first-of-type { padding-top: 6px; }
+  .entry-top {
+    display: flex;
+    align-items: baseline;
+    gap: 10px;
+    flex-wrap: wrap;
+  }
+  .medal { font-size: 20px; line-height: 1; }
+  .rank-num {
+    font-family: "IBM Plex Mono", ui-monospace, monospace;
+    font-size: 13px;
+    color: var(--ink-soft);
+  }
+  .team-name {
+    font-family: "Anton", "Arial Narrow", sans-serif;
+    font-size: 24px;
+    letter-spacing: 0.01em;
+    margin-right: auto;
+  }
+  .you-flag {
+    font-family: "IBM Plex Mono", ui-monospace, monospace;
+    font-size: 10px;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    background: var(--you-bg);
+    border: 1px solid var(--you-edge);
+    border-radius: 3px;
+    padding: 2px 6px;
+  }
+  .pts-block {
+    font-family: "IBM Plex Mono", ui-monospace, monospace;
+    text-align: right;
+    font-variant-numeric: tabular-nums;
+  }
+  .pts-total { font-size: 20px; font-weight: 600; }
+  .pts-gw { font-size: 11px; color: var(--ink-soft); }
+  .byline {
+    font-size: 13px;
+    color: var(--ink-soft);
+    margin: 3px 0 10px;
+  }
+  .headline {
+    font-family: "Anton", "Arial Narrow", sans-serif;
+    font-size: 15.5px;
+    letter-spacing: 0.01em;
+    text-transform: uppercase;
+    color: var(--masthead-red);
+    margin: 0 0 6px;
+  }
+  .copy { font-size: 16px; margin: 0; }
+  .copy .stat { font-family: "IBM Plex Mono", ui-monospace, monospace; font-weight: 600; }
+
+  .entry.you {
+    background: var(--you-bg);
+    margin: 0 -22px;
+    padding: 20px 22px;
+    border-bottom: 1px solid var(--you-edge);
+  }
+
+  /* Talking points box */
+  .box {
+    background: var(--paper);
+    border: 1px solid var(--rule);
+    border-radius: 2px;
+    padding: 18px 20px;
+    margin-top: 44px;
+  }
+  .box h2.section-head { margin-top: 0; }
+  .box ul {
+    margin: 0;
+    padding-left: 20px;
+    font-size: 15px;
+  }
+  .box li { margin-bottom: 9px; }
+  .box li:last-child { margin-bottom: 0; }
+
+  /* Narrative watch */
+  .narrative {
+    font-style: italic;
+    font-size: 16.5px;
+    margin-top: 44px;
+    line-height: 1.85;
+  }
+  .narrative p { margin: 0; }
+  .signoff {
+    margin-top: 26px;
+    font-family: "Anton", "Arial Narrow", sans-serif;
+    font-style: normal;
+    font-size: 17px;
+    letter-spacing: 0.01em;
+  }
+
+  /* Season ledger */
+  .ledger-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 10px;
+    margin-bottom: 18px;
+  }
+  .ledger-card {
+    background: var(--bg);
+    border: 1px solid var(--rule);
+    padding: 12px 14px;
+  }
+  .ledger-label {
+    font-family: "IBM Plex Mono", ui-monospace, monospace;
+    font-size: 10.5px;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--ink-soft);
+    margin-bottom: 5px;
+  }
+  .ledger-value {
+    font-size: 16px;
+    font-weight: 600;
+    font-family: "Source Serif 4", Georgia, serif;
+  }
+  .ledger-sub { font-size: 12px; color: var(--ink-soft); margin-top: 2px; }
+  .ledger-table-scroll { overflow-x: auto; }
+  table.ledger {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 13.5px;
+  }
+  table.ledger th, table.ledger td {
+    padding: 7px 10px;
+    border-bottom: 1px solid var(--rule);
+    text-align: right;
+    font-family: "IBM Plex Mono", ui-monospace, monospace;
+    font-variant-numeric: tabular-nums;
+    white-space: nowrap;
+  }
+  table.ledger th:first-child, table.ledger td:first-child {
+    text-align: left;
+    font-family: "Source Serif 4", Georgia, serif;
+    font-weight: 600;
+  }
+  table.ledger thead th {
+    color: var(--ink-soft);
+    font-size: 10.5px;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    font-weight: 500;
+  }
+
+  .footnote {
+    font-family: "IBM Plex Mono", ui-monospace, monospace;
+    font-size: 11px;
+    color: var(--ink-soft);
+    border-top: 1px solid var(--rule);
+    padding-top: 16px;
+    margin-top: 50px;
+    line-height: 1.7;
+  }
+  .footnote code {
+    background: var(--paper);
+    border: 1px solid var(--rule);
+    padding: 1px 4px;
+    border-radius: 3px;
+  }
+
+  @media (prefers-reduced-motion: no-preference) {
+    .entry { animation: fade 0.35s ease-out both; }
+    @keyframes fade { from { opacity: 0; transform: translateY(4px); } to { opacity: 1; transform: none; } }
+  }
+</style>
+
+<div class="sheet">
+
+  <div class="masthead">
+    <div class="edition-line">Gameweek 1 Edition &middot; Est. whenever Fraser first got lucky</div>
+    <h1 class="nameplate">The Messi Cup Gazette</h1>
+    <div class="rule-thick"></div>
+    <div class="rule-thin"></div>
+    <p class="standfirst">&ldquo;Blank table. Fresh excuses, fully restocked.&rdquo;</p>
+    <p class="dateline">Official dispatch of the &ldquo;Let&rsquo;s Get Messi&rdquo; mini-league &middot; 24 August 2026</p>
+  </div>
+
+  <h2 class="section-head">🏆 Table Review</h2>
+
+  <div class="entry">
+    <div class="entry-top">
+      <span class="medal">🥇</span>
+      <span class="team-name">Mancs</span>
+      <span class="pts-block"><span class="pts-total">62</span><br><span class="pts-gw">GW1: 62</span></span>
+    </div>
+    <p class="byline">Fraser McKenna</p>
+    <p class="headline">👑 Tops the table. Real United can't say the same.</p>
+    <p class="copy">Somewhere in Manchester, the actual Reds were being taken apart by newly-promoted Hull City,
+      final score a grim <span class="stat">2&ndash;0</span>. Fraser's fantasy Mancs clearly didn't get the memo:
+      <span class="stat">62 points</span>, ten clear of the field on day one. Reality and fantasy football
+      diverging spectacularly, as God intended.</p>
+  </div>
+
+  <div class="entry you">
+    <div class="entry-top">
+      <span class="medal">🥈</span>
+      <span class="team-name">Barco Polo <span class="you-flag">You</span></span>
+      <span class="pts-block"><span class="pts-total">52</span><br><span class="pts-gw">GW1: 52</span></span>
+    </div>
+    <p class="byline">Brent Fisher</p>
+    <p class="headline">🥈 Second on debut, first to file the paperwork.</p>
+    <p class="copy">Barco Polo dips a toe in and comes out swimming &mdash; <span class="stat">52 points</span>,
+      ten adrift of the summit but five clear of the chasing pack. The Gazette's editor-in-chief has never
+      let modesty get in the way of a good headline, and this week he's written his own.</p>
+  </div>
+
+  <div class="entry">
+    <div class="entry-top">
+      <span class="medal">🥉</span>
+      <span class="team-name">Haaland'sHaulers2.0</span>
+      <span class="pts-block"><span class="pts-total">47</span><br><span class="pts-gw">GW1: 47</span></span>
+    </div>
+    <p class="byline">Dalen Bunce</p>
+    <p class="headline">⚽ The man, the myth, the 2.0.</p>
+    <p class="copy">City ground out a <span class="stat">2&ndash;1</span> win over Bournemouth with the big Norwegian
+      doing what big Norwegians do, and Dalen's aptly-named Haulers cashed in early. Third on debut &mdash;
+      proof that naming your team after the best striker on the planet remains sound long-term strategy,
+      version 2.0 and all.</p>
+  </div>
+
+  <div class="entry">
+    <div class="entry-top">
+      <span class="rank-num">4</span>
+      <span class="team-name">abc</span>
+      <span class="pts-block"><span class="pts-total">42</span><br><span class="pts-gw">GW1: 42</span></span>
+    </div>
+    <p class="byline">David Eades</p>
+    <p class="headline">📖 As easy as abc.</p>
+    <p class="copy">David's back for another campaign with a team name that promises no marks for effort and
+      immediately backs it up &mdash; <span class="stat">42 points</span>, good for 4th. Somewhere down the
+      standings, son Luke will already be doing the maths on that gap.</p>
+  </div>
+
+  <div class="entry">
+    <div class="entry-top">
+      <span class="rank-num">5</span>
+      <span class="team-name">TBs Turtles</span>
+      <span class="pts-block"><span class="pts-total">34</span><br><span class="pts-gw">GW1: 34</span></span>
+    </div>
+    <p class="byline">Andrew Bryce</p>
+    <p class="headline">🐢 Slow start, shell fully intact.</p>
+    <p class="copy"><span class="stat">34 points</span> &mdash; nothing to write home about, nothing to panic
+      over either. Andrew's plan so far: keep your head down, keep the shell on, and let the hares up top
+      burn themselves out first.</p>
+  </div>
+
+  <div class="entry">
+    <div class="entry-top">
+      <span class="rank-num">6</span>
+      <span class="team-name">Moist Clams</span>
+      <span class="pts-block"><span class="pts-total">29</span><br><span class="pts-gw">GW1: 29</span></span>
+    </div>
+    <p class="byline">Declan Braithwaite</p>
+    <p class="headline">🦪 Shellshocked, but afloat.</p>
+    <p class="copy">The Clams open the new season a little damp &mdash; <span class="stat">29 points</span> and
+      a mid-table finish on day one. No word yet on this year's holiday itinerary, but the Gazette will be
+      watching the away form closely.</p>
+  </div>
+
+  <div class="entry">
+    <div class="entry-top">
+      <span class="rank-num">7</span>
+      <span class="team-name">Byron's Team</span>
+      <span class="pts-block"><span class="pts-total">28</span><br><span class="pts-gw">GW1: 28</span></span>
+    </div>
+    <p class="byline">Byron Cowan</p>
+    <p class="headline">📋 Does what it says on the tin.</p>
+    <p class="copy">Exactly what it says on the tin, and this week that means a perfectly respectable,
+      entirely unremarkable <span class="stat">28 points</span> &mdash; enough for a share of 7th and not a
+      single headline to its name. Yet.</p>
+  </div>
+
+  <div class="entry">
+    <div class="entry-top">
+      <span class="rank-num">7</span>
+      <span class="team-name">Jib Jib</span>
+      <span class="pts-block"><span class="pts-total">28</span><br><span class="pts-gw">GW1: 28</span></span>
+    </div>
+    <p class="byline">jib lurie</p>
+    <p class="headline">✌️ Say it twice, mean it once.</p>
+    <p class="copy">Matches Byron point for point on <span class="stat">28</span>, proving that saying it
+      twice doesn't get you there any faster. A tidy, low-drama start for jib lurie, who takes a share of
+      7th and asks no further questions.</p>
+  </div>
+
+  <div class="entry">
+    <div class="entry-top">
+      <span class="rank-num">7</span>
+      <span class="team-name">Puttingonmyjacquet</span>
+      <span class="pts-block"><span class="pts-total">28</span><br><span class="pts-gw">GW1: 28</span></span>
+    </div>
+    <p class="byline">Luke Eades</p>
+    <p class="headline">🎒 New term, same homework.</p>
+    <p class="copy">Luke rounds out the three-way tie for 7th on <span class="stat">28 points</span>, just
+      as the new school term gets underway back home. Father David sits two places and fourteen points
+      clear for now &mdash; early bragging rights firmly with the elder Eades.</p>
+  </div>
+
+  <div class="entry">
+    <div class="entry-top">
+      <span class="rank-num">10</span>
+      <span class="team-name">Meh United</span>
+      <span class="pts-block"><span class="pts-total">27</span><br><span class="pts-gw">GW1: 27</span></span>
+    </div>
+    <p class="byline">Warren Eades</p>
+    <p class="headline">🔻 Meh, but at least it's honest.</p>
+    <p class="copy">Warren's Meh United props up the table on debut with <span class="stat">27 points</span>
+      &mdash; and somewhere in Manchester, the real United will feel the name is generous. A <span class="stat">2&ndash;0</span>
+      opening-day defeat to newly-promoted Hull City means both the real Reds and Warren's fantasy side are
+      staring up the table this week. At least the branding is accurate.</p>
+  </div>
+
+  <div class="box">
+    <h2 class="section-head">🔥 GW1 Talking Points</h2>
+    <ul>
+      <li>Mancs romp to a ten-point opening cushion &mdash; whatever the real Manchester United do about it</li>
+      <li>Hull City stun Old Trafford's faithful; Meh United quietly nods along</li>
+      <li>Haaland delivers on cue, Haulers 2.0 cash in early</li>
+      <li>Three-way logjam at 28 points: Byron, Jib Jib, and Puttingonmyjacquet all level on debut</li>
+      <li>The Eades household already at war: David 4th, Luke tied-7th, Warren dead last</li>
+      <li>Barco Polo opens with a statement &mdash; ten behind the pace, five clear of the chase</li>
+      <li>Moist Clams keep their heads just above the water line</li>
+      <li>🃏 Chips played in GW1: none reported &mdash; everyone's keeping their wildcards in the drawer</li>
+      <li>Bonus points still provisional &mdash; the FPL server hasn't locked GW1 in yet</li>
+    </ul>
+  </div>
+
+  <h2 class="section-head">📊 Season Ledger</h2>
+  <p class="copy" style="margin-bottom:16px;">The running tally the Gazette will keep all season &mdash;
+    updated every gameweek. Week one, so most of these are placeholders. Give it a fortnight.</p>
+
+  <div class="ledger-grid">
+    <div class="ledger-card">
+      <div class="ledger-label">👑 Team of the Week</div>
+      <div class="ledger-value">Mancs &middot; 62</div>
+      <div class="ledger-sub">Fraser McKenna</div>
+    </div>
+    <div class="ledger-card">
+      <div class="ledger-label">🥴 Wooden Spoon</div>
+      <div class="ledger-value">Meh United &middot; 27</div>
+      <div class="ledger-sub">Warren Eades</div>
+    </div>
+    <div class="ledger-card">
+      <div class="ledger-label">📈 Biggest Riser</div>
+      <div class="ledger-value">&mdash;</div>
+      <div class="ledger-sub">no GW0 to rise from</div>
+    </div>
+    <div class="ledger-card">
+      <div class="ledger-label">📉 Biggest Faller</div>
+      <div class="ledger-value">&mdash;</div>
+      <div class="ledger-sub">give it a week</div>
+    </div>
+    <div class="ledger-card">
+      <div class="ledger-label">🃏 Chips Used (Season)</div>
+      <div class="ledger-value">None yet</div>
+      <div class="ledger-sub">across all 10 teams</div>
+    </div>
+    <div class="ledger-card">
+      <div class="ledger-label">📏 League Spread</div>
+      <div class="ledger-value">35 pts</div>
+      <div class="ledger-sub">top (62) to bottom (27)</div>
+    </div>
+  </div>
+
+  <div class="ledger-table-scroll">
+    <table class="ledger">
+      <thead>
+        <tr><th>Team</th><th>GW1</th><th>Total</th><th>Rank</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>Mancs</td><td>62</td><td>62</td><td>1</td></tr>
+        <tr><td>Barco Polo</td><td>52</td><td>52</td><td>2</td></tr>
+        <tr><td>Haaland'sHaulers2.0</td><td>47</td><td>47</td><td>3</td></tr>
+        <tr><td>abc</td><td>42</td><td>42</td><td>4</td></tr>
+        <tr><td>TBs Turtles</td><td>34</td><td>34</td><td>5</td></tr>
+        <tr><td>Moist Clams</td><td>29</td><td>29</td><td>6</td></tr>
+        <tr><td>Byron's Team</td><td>28</td><td>28</td><td>7</td></tr>
+        <tr><td>Jib Jib</td><td>28</td><td>28</td><td>7</td></tr>
+        <tr><td>Puttingonmyjacquet</td><td>28</td><td>28</td><td>7</td></tr>
+        <tr><td>Meh United</td><td>27</td><td>27</td><td>10</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <h2 class="section-head">⚽ Narrative Watch After GW1</h2>
+  <div class="narrative">
+    <p>Fraser leads from the front.<br>
+    Brent chases, not sulking (yet).<br>
+    Dalen's Haulers deliver early.<br>
+    David keeps it simple.<br>
+    Andrew keeps his shell on.<br>
+    Declan stays just above water.<br>
+    Byron, Jib, and Luke tangle for seventh.<br>
+    Warren's United live down to the name.<br>
+    Gameweek 2 awaits.</p>
+    <p class="signoff">And yes &mdash; one week in, and it's already cooking. 🔥</p>
+  </div>
+
+  <p class="footnote">
+    Standings pulled from the official FPL API for league <code>792878</code> on 24 Aug 2026. Real-world
+    match results via public reporting on Matchweek 1 of the 2026&ndash;27 Premier League season. GW1 is not
+    yet marked finished/bonus-confirmed by FPL, so a point or two above could still shift. No rank-movement
+    arrows this week &mdash; there's no Gameweek 0 to have fallen from.
+  </p>
+
+  <script type="application/json" id="messi-gazette-ledger">
+{
+  "league_id": 792878,
+  "league_name": "Let's get Messi",
+  "latest_gameweek": 1,
+  "gameweeks": {
+    "1": {
+      "finished_on_fpl": false,
+      "note": "Provisional at time of writing — GW1 not yet marked finished/bonus-confirmed by FPL.",
+      "teams": {
+        "2078078": {"entry_name": "Mancs", "manager": "Fraser McKenna", "gw_points": 62, "total_points": 62, "rank": 1, "chip": null},
+        "180923":  {"entry_name": "Barco Polo", "manager": "Brent Fisher", "gw_points": 52, "total_points": 52, "rank": 2, "chip": null},
+        "7004345": {"entry_name": "Haaland'sHaulers2.0", "manager": "Dalen Bunce", "gw_points": 47, "total_points": 47, "rank": 3, "chip": null},
+        "3829721": {"entry_name": "abc", "manager": "David Eades", "gw_points": 42, "total_points": 42, "rank": 4, "chip": null},
+        "6173665": {"entry_name": "TBs Turtles", "manager": "Andrew Bryce", "gw_points": 34, "total_points": 34, "rank": 5, "chip": null},
+        "767808":  {"entry_name": "Moist Clams", "manager": "Declan Braithwaite", "gw_points": 29, "total_points": 29, "rank": 6, "chip": null},
+        "4422540": {"entry_name": "Byron's Team", "manager": "Byron Cowan", "gw_points": 28, "total_points": 28, "rank": 7, "chip": null},
+        "3782880": {"entry_name": "Jib Jib", "manager": "jib lurie", "gw_points": 28, "total_points": 28, "rank": 7, "chip": null},
+        "6962947": {"entry_name": "Puttingonmyjacquet", "manager": "Luke Eades", "gw_points": 28, "total_points": 28, "rank": 7, "chip": null},
+        "3787324": {"entry_name": "Meh United", "manager": "Warren Eades", "gw_points": 27, "total_points": 27, "rank": 10, "chip": null}
+      }
+    }
+  },
+  "season_records": {
+    "team_of_the_week": {"gameweek": 1, "entry": "2078078", "entry_name": "Mancs", "points": 62},
+    "wooden_spoon": {"gameweek": 1, "entry": "3787324", "entry_name": "Meh United", "points": 27},
+    "chips_used": []
+  }
+}
+  </script>
+
+</div>
