@@ -657,23 +657,59 @@
   <p class="footnote">
     Final standings pulled from the official FPL API for league <code>792878</code> &mdash; Gameweek 1 is
     now finished and bonus-confirmed. Real-world match results via public reporting on Matchweek 1 of the
-    2026&ndash;27 Premier League season. No rank-movement arrows this week &mdash; there's no Gameweek 0 to
-    have fallen from. Editorial policy, established this week and binding from here on: any captain
-    returning fewer than 8 points is officially ruled to have had a mare, no exceptions and no appeals.
-    Nine of the ten armbands in the league qualified this week &mdash; only Cole Palmer's owner escaped it.
-    Captain points shown are single (not doubled) returns, pulled directly from the FPL API per player
-    per fixture. Bench Boost point breakdowns for Mancs and Barco Polo aren't restated individually now that
-    bonus points have shifted the underlying player scores &mdash; the final totals above already include them.
-    Also established this week: bench points are shown for information only and never counted as "covering"
-    for a poor week unless Bench Boost was actually played &mdash; a big bench total otherwise had zero effect
-    on that manager's score.
+    2026&ndash;27 Premier League season.
   </p>
+
+  <div class="box">
+    <h2 class="section-head">📅 Coming Up: Gameweek 2</h2>
+    <p class="copy" style="margin-bottom:14px;">Ten fixtures before the next deadline &mdash; get your
+      transfers and chip calls in.</p>
+    <div class="ledger-table-scroll">
+      <table class="ledger">
+        <thead>
+          <tr><th>Match</th><th>Kickoff (SAST)</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>Crystal Palace v Man City</td><td>Fri 28 Aug, 21:00</td></tr>
+          <tr><td>Liverpool v Nott'm Forest</td><td>Sat 29 Aug, 13:30</td></tr>
+          <tr><td>Bournemouth v Everton</td><td>Sat 29 Aug, 16:00</td></tr>
+          <tr><td>Coventry City v Hull City</td><td>Sat 29 Aug, 16:00</td></tr>
+          <tr><td>Spurs v Newcastle</td><td>Sat 29 Aug, 18:30</td></tr>
+          <tr><td>Chelsea v Brighton</td><td>Sun 30 Aug, 15:00</td></tr>
+          <tr><td>Leeds v Brentford</td><td>Sun 30 Aug, 15:00</td></tr>
+          <tr><td>Sunderland v Fulham</td><td>Sun 30 Aug, 15:00</td></tr>
+          <tr><td>Man Utd v Ipswich Town</td><td>Sun 30 Aug, 17:30</td></tr>
+          <tr><td>Aston Villa v Arsenal</td><td>Mon 31 Aug, 21:00</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="copy" style="margin-top:14px;">One to watch: Man Utd host newly-promoted Ipswich at Old
+      Trafford, fresh off that opening-day shock against Hull &mdash; a chance to get the season back on
+      track, on paper at least.</p>
+  </div>
 
   <script type="application/json" id="messi-gazette-ledger">
 {
   "league_id": 792878,
   "league_name": "Let's get Messi",
+  "league_timezone": "Africa/Johannesburg (SAST, UTC+2, no daylight saving) — the league is South Africa-based. Always display kickoff times converted to SAST, never UK time.",
   "latest_gameweek": 1,
+  "next_gameweek_fixtures": {
+    "gameweek": 2,
+    "source": "FPL API /api/fixtures/?event=2, team names via /api/bootstrap-static/",
+    "fixtures": [
+      {"home": "Crystal Palace", "away": "Man City", "kickoff_utc": "2026-08-28T19:00:00Z"},
+      {"home": "Liverpool", "away": "Nott'm Forest", "kickoff_utc": "2026-08-29T11:30:00Z"},
+      {"home": "Bournemouth", "away": "Everton", "kickoff_utc": "2026-08-29T14:00:00Z"},
+      {"home": "Coventry City", "away": "Hull City", "kickoff_utc": "2026-08-29T14:00:00Z"},
+      {"home": "Spurs", "away": "Newcastle", "kickoff_utc": "2026-08-29T16:30:00Z"},
+      {"home": "Chelsea", "away": "Brighton", "kickoff_utc": "2026-08-30T13:00:00Z"},
+      {"home": "Leeds", "away": "Brentford", "kickoff_utc": "2026-08-30T13:00:00Z"},
+      {"home": "Sunderland", "away": "Fulham", "kickoff_utc": "2026-08-30T13:00:00Z"},
+      {"home": "Man Utd", "away": "Ipswich Town", "kickoff_utc": "2026-08-30T15:30:00Z"},
+      {"home": "Aston Villa", "away": "Arsenal", "kickoff_utc": "2026-08-31T19:00:00Z"}
+    ]
+  },
   "editorial_rules": {
     "mare_threshold_points": 8,
     "mare_description": "Any manager whose captain returns fewer than 8 (single, not doubled) points that gameweek is ruled to have had a mare. Established GW1, binding all season. Mentioned sparingly in prose for variety — the data/footnote is the source of truth, not every entry.",
