@@ -1,0 +1,1588 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>The Messi Cup Gazette — GW5 Card Pack</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Anton&family=Archivo:wght@500;600;700&family=IBM+Plex+Mono:wght@500;600&family=Source+Serif+4:ital,wght@0,400;0,600;1,400&display=swap">
+<style>
+  body { margin:0; background:#08171C; -webkit-font-smoothing:antialiased; }
+  a { color:#E9A93C; }
+  a:hover { color:#FFFFFF; }
+  ::selection { background:#E9A93C; color:#0B1E24; }
+  .card-grid > div:last-child { grid-column:1 / -1; justify-self:center; width:100%; max-width:320px; }
+  .stat-grid-3 { grid-template-columns:repeat(3,1fr); }
+  @media (max-width:700px) { .stat-grid-3 { grid-template-columns:1fr; } }
+
+  .gz-card:focus { outline:none; }
+  .gz-card:focus-visible { outline:2px solid #E9A93C; outline-offset:3px; }
+  @media (prefers-reduced-motion:reduce) { * { transition:none !important; } }
+</style>
+<script type="application/json" id="messi-gazette-ledger">
+{
+  "league_id": 792878,
+  "league_name": "Let's get Messi",
+  "league_timezone": "Africa/Johannesburg (SAST, UTC+2, no daylight saving) — the league is South Africa-based. Always display kickoff times converted to SAST, never UK time.",
+  "latest_gameweek": 5,
+  "next_gameweek_fixtures": {
+    "gameweek": 6,
+    "deadline_utc": "2026-10-10T10:00:00Z",
+    "deadline_sast": "Sat 10 Oct 2026, 12:00 SAST",
+    "source": "FPL API /api/fixtures/?event=6 and /api/bootstrap-static/ (teams, events), team names resolved via bootstrap-static; kickoff times shown in SAST (UTC+2) in the Gazette",
+    "fixtures": [
+      {
+        "home": "Arsenal",
+        "away": "Leeds",
+        "kickoff_utc": "2026-10-10T11:30:00Z"
+      },
+      {
+        "home": "Aston Villa",
+        "away": "Brentford",
+        "kickoff_utc": "2026-10-10T14:00:00Z"
+      },
+      {
+        "home": "Chelsea",
+        "away": "Bournemouth",
+        "kickoff_utc": "2026-10-10T14:00:00Z"
+      },
+      {
+        "home": "Ipswich Town",
+        "away": "Fulham",
+        "kickoff_utc": "2026-10-10T14:00:00Z"
+      },
+      {
+        "home": "Sunderland",
+        "away": "Brighton",
+        "kickoff_utc": "2026-10-10T14:00:00Z"
+      },
+      {
+        "home": "Man Utd",
+        "away": "Spurs",
+        "kickoff_utc": "2026-10-10T16:30:00Z"
+      },
+      {
+        "home": "Crystal Palace",
+        "away": "Nott'm Forest",
+        "kickoff_utc": "2026-10-11T13:00:00Z"
+      },
+      {
+        "home": "Hull City",
+        "away": "Everton",
+        "kickoff_utc": "2026-10-11T13:00:00Z"
+      },
+      {
+        "home": "Liverpool",
+        "away": "Man City",
+        "kickoff_utc": "2026-10-11T15:30:00Z"
+      },
+      {
+        "home": "Coventry City",
+        "away": "Newcastle",
+        "kickoff_utc": "2026-10-12T19:00:00Z"
+      }
+    ]
+  },
+  "editorial_rules": {
+    "mare_threshold_points": 8,
+    "gazette_theming": "GW3's boxed ‘The Tribunal’ courtroom feature is a recurring structural section covering armband trends and manager banter. GW4 applied a Batman/Dark Knight character casting. GW5 applies a The Walking Dead survival casting (zombies, hatchets, the post-international-break injury crisis) to every manager, using generic emoji glyphs only, woven into card headlines, copy, the Tribunal and the Narrative Watch — no standalone roll-call box and no visual reskin.",
+    "card_pack_format": "From GW3 the Gazette is laid out as the 'card pack' edition: one flippable trading card per manager (rank stripe, foil trim for the top three, big gameweek score, rank-move chip, captain badge, chip badges) with the week's write-up on the card back, followed by the Data Desk (rank movement chart and season captain accrual by player), talking points, Manager of the Month, the season ledger as the 'stat back', narrative watch and next-gameweek fixtures. The navy/gold chrome, crest and typography are permanent — only the editorial seasoning (Tribunal cases, character casting) rotates week to week."
+  },
+  "gameweeks": {
+    "4": {
+      "finished_on_fpl": true,
+      "note": "Final — GW4 finished and bonus-confirmed by FPL. Theme edition: every manager cast as a Batman-films character.",
+      "teams": {
+        "2078078": {
+          "entry_name": "Mancs",
+          "manager": "Fraser McKenna",
+          "gw_points": 104,
+          "total_points": 347,
+          "rank": 1,
+          "chip": {
+            "type": "wildcard"
+          },
+          "captain": "Cole Palmer",
+          "captain_contribution": 10,
+          "points_on_bench": 10,
+          "theme_character": "Bane"
+        },
+        "3782880": {
+          "entry_name": "Jib Jib",
+          "manager": "jib lurie",
+          "gw_points": 85,
+          "total_points": 273,
+          "rank": 2,
+          "chip": null,
+          "captain": "Cole Palmer",
+          "captain_contribution": 10,
+          "points_on_bench": 6,
+          "theme_character": "Batman"
+        },
+        "180923": {
+          "entry_name": "Barco Polo",
+          "manager": "Brent Fisher",
+          "gw_points": 72,
+          "total_points": 271,
+          "rank": 3,
+          "chip": {
+            "type": "wildcard"
+          },
+          "captain": "Cole Palmer",
+          "captain_contribution": 10,
+          "points_on_bench": 17,
+          "theme_character": "James Gordon"
+        },
+        "767808": {
+          "entry_name": "Moist Clams",
+          "manager": "Declan Braithwaite",
+          "gw_points": 64,
+          "total_points": 265,
+          "rank": 4,
+          "chip": null,
+          "captain": "Cole Palmer",
+          "captain_contribution": 10,
+          "points_on_bench": 7,
+          "theme_character": "Catwoman"
+        },
+        "3787324": {
+          "entry_name": "Meh United",
+          "manager": "Warren Eades",
+          "gw_points": 89,
+          "total_points": 263,
+          "rank": 5,
+          "chip": null,
+          "captain": "Dominik Szoboszlai",
+          "captain_contribution": 6,
+          "points_on_bench": 8,
+          "theme_character": "Scarecrow"
+        },
+        "7004345": {
+          "entry_name": "Haaland'sHaulers2.0",
+          "manager": "Dalen Bunce",
+          "gw_points": 51,
+          "total_points": 242,
+          "rank": 6,
+          "chip": null,
+          "captain": "Erling Haaland",
+          "captain_contribution": 18,
+          "points_on_bench": 14,
+          "theme_character": "Alfred"
+        },
+        "3829721": {
+          "entry_name": "abc",
+          "manager": "David Eades",
+          "gw_points": 73,
+          "total_points": 235,
+          "rank": 7,
+          "chip": null,
+          "captain": "Cole Palmer",
+          "captain_contribution": 10,
+          "points_on_bench": 3,
+          "theme_character": "Two-Face"
+        },
+        "4422540": {
+          "entry_name": "Byron's Team",
+          "manager": "Byron Cowan",
+          "gw_points": 51,
+          "total_points": 225,
+          "rank": 8,
+          "chip": null,
+          "captain": "Erling Haaland",
+          "captain_contribution": 18,
+          "points_on_bench": 19,
+          "theme_character": "Mr. Freeze"
+        },
+        "6962947": {
+          "entry_name": "Puttingonmyjacquet",
+          "manager": "Luke Eades",
+          "gw_points": 70,
+          "total_points": 221,
+          "rank": 9,
+          "chip": null,
+          "captain": "Erling Haaland",
+          "captain_contribution": 18,
+          "points_on_bench": 3,
+          "theme_character": "The Penguin"
+        },
+        "6173665": {
+          "entry_name": "TBs Turtles",
+          "manager": "Andrew Bryce",
+          "gw_points": 50,
+          "total_points": 202,
+          "rank": 10,
+          "chip": null,
+          "captain": "Igor Thiago",
+          "captain_contribution": 2,
+          "points_on_bench": 15,
+          "theme_character": "The Joker"
+        }
+      },
+      "fpl_average_entry_score": 69
+    },
+    "5": {
+      "finished_on_fpl": true,
+      "fpl_average_entry_score": 48,
+      "fpl_highest_score": 126,
+      "league_average_score": 51.3,
+      "chips_played": [],
+      "note": "Final — GW5 finished and bonus-confirmed by FPL. No chips played by any manager. Theme edition: every manager cast as a The Walking Dead survivor. abc and TBs Turtles level on 280; official league table order puts TBs Turtles 7th and abc 8th.",
+      "teams": {
+        "2078078": {
+          "entry_name": "Mancs",
+          "manager": "Fraser McKenna",
+          "gw_points": 41,
+          "total_points": 388,
+          "rank": 1,
+          "chip": null,
+          "captain": "Erling Haaland",
+          "captain_contribution": 12,
+          "points_on_bench": 14,
+          "event_transfers": 0,
+          "theme_character": "Rick Grimes"
+        },
+        "3787324": {
+          "entry_name": "Meh United",
+          "manager": "Warren Eades",
+          "gw_points": 72,
+          "total_points": 335,
+          "rank": 2,
+          "chip": null,
+          "captain": "Erling Haaland",
+          "captain_contribution": 12,
+          "points_on_bench": 10,
+          "event_transfers": 1,
+          "theme_character": "Daryl Dixon"
+        },
+        "3782880": {
+          "entry_name": "Jib Jib",
+          "manager": "jib lurie",
+          "gw_points": 47,
+          "total_points": 320,
+          "rank": 3,
+          "chip": null,
+          "captain": "Erling Haaland",
+          "captain_contribution": 12,
+          "points_on_bench": 17,
+          "event_transfers": 0,
+          "theme_character": "Michonne"
+        },
+        "180923": {
+          "entry_name": "Barco Polo",
+          "manager": "Brent Fisher",
+          "gw_points": 48,
+          "total_points": 319,
+          "rank": 4,
+          "chip": null,
+          "captain": "Erling Haaland",
+          "captain_contribution": 12,
+          "points_on_bench": 14,
+          "event_transfers": 0,
+          "theme_character": "Carol Peletier"
+        },
+        "767808": {
+          "entry_name": "Moist Clams",
+          "manager": "Declan Braithwaite",
+          "gw_points": 46,
+          "total_points": 311,
+          "rank": 5,
+          "chip": null,
+          "captain": "Erling Haaland",
+          "captain_contribution": 12,
+          "points_on_bench": 1,
+          "event_transfers": 2,
+          "theme_character": "Maggie Greene"
+        },
+        "7004345": {
+          "entry_name": "Haaland'sHaulers2.0",
+          "manager": "Dalen Bunce",
+          "gw_points": 43,
+          "total_points": 285,
+          "rank": 6,
+          "chip": null,
+          "captain": "Cole Palmer",
+          "captain_contribution": 4,
+          "points_on_bench": 2,
+          "event_transfers": 0,
+          "theme_character": "The Governor"
+        },
+        "6173665": {
+          "entry_name": "TBs Turtles",
+          "manager": "Andrew Bryce",
+          "gw_points": 78,
+          "total_points": 280,
+          "rank": 7,
+          "chip": null,
+          "captain": "Igor Thiago",
+          "captain_contribution": 10,
+          "points_on_bench": 2,
+          "event_transfers": 0,
+          "theme_character": "Negan"
+        },
+        "3829721": {
+          "entry_name": "abc",
+          "manager": "David Eades",
+          "gw_points": 45,
+          "total_points": 280,
+          "rank": 8,
+          "chip": null,
+          "captain": "Erling Haaland",
+          "captain_contribution": 12,
+          "points_on_bench": 3,
+          "event_transfers": 1,
+          "theme_character": "Eugene Porter"
+        },
+        "6962947": {
+          "entry_name": "Puttingonmyjacquet",
+          "manager": "Luke Eades",
+          "gw_points": 56,
+          "total_points": 277,
+          "rank": 9,
+          "chip": null,
+          "captain": "Erling Haaland",
+          "captain_contribution": 12,
+          "points_on_bench": 9,
+          "event_transfers": 2,
+          "theme_character": "Morgan Jones"
+        },
+        "4422540": {
+          "entry_name": "Byron's Team",
+          "manager": "Byron Cowan",
+          "gw_points": 37,
+          "total_points": 262,
+          "rank": 10,
+          "chip": null,
+          "captain": "Erling Haaland",
+          "captain_contribution": 12,
+          "points_on_bench": 0,
+          "event_transfers": 0,
+          "theme_character": "A Walker"
+        }
+      }
+    }
+  },
+  "season_records": {
+    "team_of_the_week": {
+      "gameweek": 5,
+      "entry": "6173665",
+      "entry_name": "TBs Turtles",
+      "points": 78
+    },
+    "wooden_spoon": {
+      "gameweek": 5,
+      "entry": "4422540",
+      "entry_name": "Byron's Team",
+      "points": 37
+    },
+    "biggest_riser": {
+      "gameweek": 5,
+      "entry": "3787324",
+      "entry_name": "Meh United",
+      "from_rank": 5,
+      "to_rank": 2,
+      "places": 3,
+      "tied_with": {
+        "entry": "6173665",
+        "entry_name": "TBs Turtles",
+        "from_rank": 10,
+        "to_rank": 7,
+        "places": 3
+      }
+    },
+    "biggest_faller": {
+      "gameweek": 5,
+      "entry": "4422540",
+      "entry_name": "Byron's Team",
+      "from_rank": 8,
+      "to_rank": 10,
+      "places": -2
+    },
+    "chips_used": [
+      {
+        "gameweek": 1,
+        "entry": "2078078",
+        "entry_name": "Mancs",
+        "chip": "bench_boost"
+      },
+      {
+        "gameweek": 1,
+        "entry": "180923",
+        "entry_name": "Barco Polo",
+        "chip": "bench_boost"
+      },
+      {
+        "gameweek": 2,
+        "entry": "767808",
+        "entry_name": "Moist Clams",
+        "chip": "bench_boost"
+      },
+      {
+        "gameweek": 3,
+        "entry": "2078078",
+        "entry_name": "Mancs",
+        "chip": "triple_captain"
+      },
+      {
+        "gameweek": 3,
+        "entry": "3787324",
+        "entry_name": "Meh United",
+        "chip": "triple_captain"
+      },
+      {
+        "gameweek": 3,
+        "entry": "767808",
+        "entry_name": "Moist Clams",
+        "chip": "wildcard"
+      },
+      {
+        "gameweek": 3,
+        "entry": "180923",
+        "entry_name": "Barco Polo",
+        "chip": "free_hit"
+      },
+      {
+        "gameweek": 4,
+        "entry": "2078078",
+        "entry_name": "Mancs",
+        "chip": "wildcard"
+      },
+      {
+        "gameweek": 4,
+        "entry": "180923",
+        "entry_name": "Barco Polo",
+        "chip": "wildcard"
+      }
+    ],
+    "most_captained_season": {
+      "player": "Erling Haaland",
+      "count": 26,
+      "of_picks": 50,
+      "through_gameweek": 5
+    },
+    "season_captain_accrual_by_player": {
+      "through_gameweek": 5,
+      "players": [
+        {
+          "player": "Erling Haaland",
+          "points": 406,
+          "armbands": 26
+        },
+        {
+          "player": "Bruno Fernandes",
+          "points": 146,
+          "armbands": 5
+        },
+        {
+          "player": "Cole Palmer",
+          "points": 80,
+          "armbands": 7
+        },
+        {
+          "player": "Igor Thiago",
+          "points": 24,
+          "armbands": 7
+        },
+        {
+          "player": "Dominik Szoboszlai",
+          "points": 20,
+          "armbands": 3
+        },
+        {
+          "player": "Alexander Isak",
+          "points": 20,
+          "armbands": 2
+        }
+      ]
+    },
+    "biggest_bench_waste": {
+      "gameweek": 1,
+      "entry": "767808",
+      "entry_name": "Moist Clams",
+      "points_on_bench": 25
+    },
+    "manager_of_the_month": {
+      "current": {
+        "month": "October 2026",
+        "status": "not_started",
+        "first_gameweek": 6,
+        "note": "October opens with GW6 (deadline Sat 10 Oct 2026, 12:00 SAST), the first gameweek back after the international break."
+      },
+      "history": [
+        {
+          "month": "August 2026",
+          "status": "final",
+          "gameweeks_included": [
+            1,
+            2
+          ],
+          "entry": "2078078",
+          "entry_name": "Mancs",
+          "manager": "Fraser McKenna",
+          "points": 188,
+          "runner_up": {
+            "entry": "767808",
+            "entry_name": "Moist Clams",
+            "points": 156
+          }
+        },
+        {
+          "month": "September 2026",
+          "status": "final",
+          "gameweeks_included": [
+            3,
+            4,
+            5
+          ],
+          "entry": "3787324",
+          "entry_name": "Meh United",
+          "manager": "Warren Eades",
+          "points": 219,
+          "runner_up": {
+            "entry": "2078078",
+            "entry_name": "Mancs",
+            "points": 200
+          },
+          "third": {
+            "entry": "3782880",
+            "entry_name": "Jib Jib",
+            "points": 182
+          }
+        }
+      ]
+    }
+  }
+}
+</script>
+</head>
+<body>
+
+
+<div style="background:#08171C;padding:0 0 56px;font-family:'Source Serif 4',Georgia,serif;color:#EAF2F0">
+<div style="max-width:1180px;margin:0 auto;padding:0 clamp(14px,3vw,32px)">
+
+  <header style="text-align:center;padding:34px 0 0">
+    <div style="display:flex;align-items:center;justify-content:center;gap:12px;font-family:'IBM Plex Mono',ui-monospace,monospace;font-size:10px;letter-spacing:0.14em;text-transform:uppercase;color:#7E9AA0">
+      <span style="height:1px;flex:1;background:#1E3A42"></span>
+      <span style="text-align:center">Gameweek 5 Edition · Final · Survival Edition — The Walking Dead</span>
+      <span style="height:1px;flex:1;background:#1E3A42"></span>
+    </div>
+    <div style="width:112px;margin:16px auto 8px;filter:drop-shadow(0 6px 18px rgba(233,169,60,0.28))">
+      <svg viewBox="0 0 400 400" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Let's Get Messi league badge" style="width:100%;height:auto;display:block">
+        <defs>
+          <clipPath id="gDisc"><circle cx="200" cy="200" r="162"></circle></clipPath>
+          <clipPath id="gBall"><circle cx="200" cy="200" r="60"></circle></clipPath>
+          <path id="gArcTop" d="M 200,200 m -177,0 a 177,177 0 0 1 354,0" fill="none"></path>
+          <path id="gArcBot" d="M 200,200 m -189,0 a 189,189 0 0 0 378,0" fill="none"></path>
+        </defs>
+        <circle cx="200" cy="200" r="196" fill="#E9A93C"></circle>
+        <circle cx="200" cy="200" r="196" fill="none" stroke="#14343C" stroke-width="8"></circle>
+        <circle cx="200" cy="200" r="170" fill="none" stroke="#14343C" stroke-width="8"></circle>
+        <g clip-path="url(#gDisc)">
+          <rect x="30" y="30" width="340" height="120" fill="#2E7E90"></rect>
+          <rect x="30" y="108" width="340" height="38" fill="#F0913C"></rect>
+          <rect x="30" y="144" width="340" height="64" fill="#FBC258"></rect>
+          <circle cx="200" cy="164" r="44" fill="#FFE49B"></circle>
+          <g fill="#1C5966">
+            <rect x="34" y="150" width="20" height="58"></rect><rect x="58" y="132" width="16" height="76"></rect>
+            <rect x="78" y="158" width="24" height="50"></rect><rect x="106" y="142" width="14" height="66"></rect>
+            <rect x="124" y="164" width="18" height="44"></rect>
+            <rect x="262" y="160" width="18" height="48"></rect><rect x="284" y="138" width="16" height="70"></rect>
+            <rect x="304" y="156" width="24" height="52"></rect><rect x="332" y="146" width="16" height="62"></rect>
+            <rect x="352" y="166" width="18" height="42"></rect>
+          </g>
+          <path d="M108,212 Q200,74 292,212" fill="none" stroke="#14343C" stroke-width="26" stroke-linecap="round"></path>
+          <path d="M108,212 Q200,74 292,212" fill="none" stroke="#F6EFDD" stroke-width="13" stroke-linecap="round"></path>
+          <ellipse cx="200" cy="206" rx="98" ry="28" fill="#2C6E7E" stroke="#14343C" stroke-width="8"></ellipse>
+          <ellipse cx="200" cy="200" rx="98" ry="26" fill="#3C8A9A" stroke="#14343C" stroke-width="8"></ellipse>
+          <ellipse cx="200" cy="198" rx="66" ry="15" fill="#F6EFDD"></ellipse>
+          <rect x="30" y="216" width="340" height="60" fill="#1E7E8E"></rect>
+          <path d="M30,216 Q86,232 142,216 Q198,200 254,216 Q310,232 370,216 L370,240 L30,240 Z" fill="#2A93A4"></path>
+          <path d="M30,268 Q100,250 170,268 Q240,286 370,262 L370,300 L30,300 Z" fill="#F6EFDD"></path>
+          <rect x="30" y="288" width="340" height="90" fill="#EBCB90"></rect>
+          <g stroke="#2C7A45" stroke-width="8" stroke-linecap="round" fill="none">
+            <path d="M52,368 Q56,336 44,318"></path><path d="M62,368 Q62,338 76,320"></path><path d="M74,368 Q76,340 92,330"></path>
+            <path d="M348,368 Q344,336 356,318"></path><path d="M336,368 Q336,338 322,320"></path><path d="M324,368 Q322,340 306,330"></path>
+          </g>
+        </g>
+        <circle cx="200" cy="200" r="162" fill="none" stroke="#14343C" stroke-width="10"></circle>
+        <ellipse cx="200" cy="332" rx="52" ry="12" fill="#D9B478"></ellipse>
+        <g transform="translate(200,308) scale(0.58) translate(-200,-200)">
+          <circle cx="200" cy="200" r="60" fill="#F6EFDD" stroke="#14343C" stroke-width="12"></circle>
+          <g clip-path="url(#gBall)">
+            <path d="M200,180 L219,193.8 L211.8,216.2 L188.2,216.2 L181,193.8 Z" fill="#0E7A43"></path>
+            <g stroke="#14343C" stroke-width="9" stroke-linecap="round">
+              <path d="M200,180 L200,140"></path><path d="M219,193.8 L257.1,177.5"></path><path d="M211.8,216.2 L235.3,244.5"></path>
+              <path d="M188.2,216.2 L164.7,244.5"></path><path d="M181,193.8 L142.9,177.5"></path>
+            </g>
+            <circle cx="236.4" cy="149.8" r="18" fill="#DE3831"></circle>
+            <circle cx="259" cy="219.2" r="18" fill="#002395"></circle>
+            <circle cx="200" cy="262" r="18" fill="#FFB612"></circle>
+            <circle cx="141" cy="219.2" r="18" fill="#FFB612"></circle>
+            <circle cx="163.6" cy="149.8" r="18" fill="#14343C"></circle>
+          </g>
+        </g>
+        <ellipse cx="200" cy="336" rx="58" ry="16" fill="#EBCB90"></ellipse>
+        <text font-family="Archivo, sans-serif" font-weight="700" font-size="19" fill="#14343C" letter-spacing="3">
+          <textPath href="#gArcTop" startOffset="50%" text-anchor="middle">LET'S GET MESSI</textPath>
+        </text>
+        <text font-family="Archivo, sans-serif" font-weight="700" font-size="15" fill="#14343C" letter-spacing="8">
+          <textPath href="#gArcBot" startOffset="50%" text-anchor="middle">FPL 2026/7</textPath>
+        </text>
+      </svg>
+    </div>
+    <h1 style="font-family:'Anton',Impact,sans-serif;font-weight:400;font-size:clamp(44px,11vw,104px);line-height:0.86;letter-spacing:-0.015em;margin:6px 0 0;text-transform:uppercase;color:#FFFFFF;text-wrap:balance;text-shadow:0 0 46px rgba(233,169,60,0.22)">The Messi Cup <span style="color:#E9A93C">Gazette</span></h1>
+    <div style="display:flex;align-items:center;gap:12px;margin:20px 0 0">
+      <span style="height:2px;flex:1;background:#1E3A42"></span>
+      <span style="font-family:'IBM Plex Mono',ui-monospace,monospace;font-size:10px;font-weight:600;letter-spacing:0.24em;color:#0B1E24;background:#E9A93C;padding:4px 10px">GW05 · CARD PACK</span>
+      <span style="height:2px;flex:1;background:#1E3A42"></span>
+    </div>
+    <p style="font-family:'Source Serif 4',Georgia,serif;font-style:italic;font-size:clamp(18px,2.8vw,24px);line-height:1.4;margin:18px auto 12px;max-width:660px;text-wrap:pretty">“The walkers aren’t at the gates — they’re in the treatment room, and the break did nothing to thin the herd.”</p>
+    <p style="font-family:'IBM Plex Mono',ui-monospace,monospace;font-size:10px;letter-spacing:0.09em;text-transform:uppercase;color:#7E9AA0;margin:0 0 20px;line-height:1.7">Official dispatch of the “Let’s Get Messi” mini-league · 8 October 2026 · bonus points confirmed, GW5 locked · GW6 deadline Sat 10 Oct, 12:00 SAST</p>
+  </header>
+
+  <div class="stat-grid-3" style="display:grid;gap:1px;background:#1E3A42;border:1px solid #1E3A42;margin:0 0 30px">
+    <div style="background:#102A31;padding:14px 16px">
+      <div style="font-family:'IBM Plex Mono',monospace;font-size:9.5px;letter-spacing:0.14em;text-transform:uppercase;color:#7E9AA0;margin-bottom:6px">Top of the table</div>
+      <div style="font-family:'Anton',Impact,sans-serif;font-size:22px;text-transform:uppercase;color:#E9A93C;line-height:1.1">Mancs <span style="color:#FFFFFF">388</span></div>
+    </div>
+    <div style="background:#102A31;padding:14px 16px">
+      <div style="font-family:'IBM Plex Mono',monospace;font-size:9.5px;letter-spacing:0.14em;text-transform:uppercase;color:#7E9AA0;margin-bottom:6px">GW5 high score</div>
+      <div style="font-family:'Anton',Impact,sans-serif;font-size:22px;text-transform:uppercase;color:#5FD08A;line-height:1.1">TBs Turtles <span style="color:#FFFFFF">78</span></div>
+    </div>
+    <div style="background:#102A31;padding:14px 16px">
+      <div style="font-family:'IBM Plex Mono',monospace;font-size:9.5px;letter-spacing:0.14em;text-transform:uppercase;color:#7E9AA0;margin-bottom:6px">GW5 low score</div>
+      <div style="font-family:'Anton',Impact,sans-serif;font-size:22px;text-transform:uppercase;color:#F2705C;line-height:1.1">Byron's Team <span style="color:#FFFFFF">37</span></div>
+    </div>
+    <div style="background:#102A31;padding:14px 16px">
+      <div style="font-family:'IBM Plex Mono',monospace;font-size:9.5px;letter-spacing:0.14em;text-transform:uppercase;color:#7E9AA0;margin-bottom:6px">Chips played in GW5</div>
+      <div style="font-family:'Anton',Impact,sans-serif;font-size:22px;text-transform:uppercase;color:#E9A93C;line-height:1.1">None <span style="color:#FFFFFF">— armoury sealed</span></div>
+    </div>
+    <div style="background:#102A31;padding:14px 16px">
+      <div style="font-family:'IBM Plex Mono',monospace;font-size:9.5px;letter-spacing:0.14em;text-transform:uppercase;color:#7E9AA0;margin-bottom:6px">GW5 average (FPL-wide)</div>
+      <div style="font-family:'Anton',Impact,sans-serif;font-size:22px;text-transform:uppercase;color:#FFFFFF;line-height:1.1">48 <span style="color:#7E9AA0">pts</span></div>
+    </div>
+    <div style="background:#102A31;padding:14px 16px">
+      <div style="font-family:'IBM Plex Mono',monospace;font-size:9.5px;letter-spacing:0.14em;text-transform:uppercase;color:#7E9AA0;margin-bottom:6px">Bench points (our league)</div>
+      <div style="font-family:'Anton',Impact,sans-serif;font-size:22px;text-transform:uppercase;color:#FFFFFF;line-height:1.1">72 <span style="color:#7E9AA0">wasted</span></div>
+    </div>
+  </div>
+
+  <div style="display:flex;flex-wrap:wrap;align-items:baseline;justify-content:space-between;gap:10px;border-bottom:2px solid #E9A93C;padding-bottom:10px;margin-bottom:6px">
+    <h2 style="font-family:'Anton',Impact,sans-serif;font-weight:400;font-size:clamp(20px,3.4vw,28px);text-transform:uppercase;margin:0;color:#FFFFFF">🏆 Table Review</h2>
+    <span style="font-family:'IBM Plex Mono',monospace;font-size:10.5px;letter-spacing:0.1em;text-transform:uppercase;color:#7E9AA0">Tap any card to flip for the write-up</span>
+  </div>
+
+  <div class="card-grid" style="display:grid;grid-template-columns:repeat(auto-fill,minmax(290px,1fr));gap:18px;margin:20px 0 0;">
+    
+      <div role="button" tabindex="0" class="gz-card" data-card-index="0" style="position:relative;height:460px;cursor:pointer">
+
+          <div class="gz-face gz-face-front" style="position:absolute;inset:0;background:linear-gradient(160deg,#153C46 0%,#0C242B 55%,#102A31 100%);border:2px solid #E9A93C;box-shadow:0 14px 34px rgba(0,0,0,0.45),inset 0 0 0 1px rgba(255,255,255,0.04);display:grid;grid-template-rows:auto auto 1fr auto;overflow:hidden">
+            <div style="display:flex;align-items:center;justify-content:space-between;gap:10px;background:#E9A93C;padding:8px 14px">
+              <span style="font-family:'Anton',Impact,sans-serif;font-size:20px;line-height:1;color:#0B1E24">#1</span>
+              <span style="font-family:'IBM Plex Mono',monospace;font-size:9.5px;font-weight:600;letter-spacing:0.16em;text-transform:uppercase;color:#0B1E24">Foil edition</span>
+            </div>
+            <div style="padding:16px 16px 0">
+              <div style="display:flex;align-items:center;gap:8px;margin-bottom:6px">
+                <span style="font-size:22px;line-height:1">🪓</span>
+                <span style="font-family:'IBM Plex Mono',monospace;font-size:10px;font-weight:600;letter-spacing:0.1em;text-transform:uppercase;color:#7E9AA0">as Rick Grimes</span>
+              </div>
+              <h3 style="font-family:'Anton',Impact,sans-serif;font-weight:400;font-size:clamp(22px,2.4vw,28px);line-height:1.02;margin:0;text-transform:uppercase;color:#FFFFFF;word-break:break-word">Mancs</h3>
+              <p style="font-family:'Archivo',sans-serif;font-size:12.5px;letter-spacing:0.04em;text-transform:uppercase;color:#8AA6AC;margin:6px 0 0">Fraser McKenna</p>
+            </div>
+            <div style="padding:14px 16px 0;display:flex;align-items:flex-end;gap:14px">
+              <div>
+                <div style="font-family:'IBM Plex Mono',monospace;font-size:9.5px;letter-spacing:0.14em;text-transform:uppercase;color:#7E9AA0">GW5</div>
+                <div style="font-family:'Anton',Impact,sans-serif;font-size:64px;line-height:0.86;color:#F2705C;font-variant-numeric:tabular-nums">41</div>
+              </div>
+              <div style="padding-bottom:6px">
+                <div style="font-family:'IBM Plex Mono',monospace;font-size:9.5px;letter-spacing:0.14em;text-transform:uppercase;color:#7E9AA0">Season</div>
+                <div style="font-family:'IBM Plex Mono',monospace;font-size:24px;font-weight:600;color:#FFFFFF;font-variant-numeric:tabular-nums">388</div>
+              </div>
+              <div style="margin-left:auto;padding-bottom:8px;text-align:right">
+                <div style="font-family:'IBM Plex Mono',monospace;font-size:15px;font-weight:600;color:#7E9AA0">—</div>
+                <div style="font-family:'IBM Plex Mono',monospace;font-size:9.5px;letter-spacing:0.1em;text-transform:uppercase;color:#7E9AA0">no change</div>
+              </div>
+            </div>
+            <div style="padding:14px 16px 16px;display:grid;gap:8px">
+              <div style="display:flex;align-items:center;gap:8px;background:#0B1E24;border:1px solid #1E3A42;padding:8px 10px">
+                <span style="font-size:14px">🎖️</span>
+                <span style="font-family:'Archivo',sans-serif;font-weight:700;font-size:13.5px;color:#EAF2F0;flex:1;min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap">Erling Haaland</span>
+                <span style="font-family:'IBM Plex Mono',monospace;font-size:14px;font-weight:600;color:#E9A93C">12</span>
+              </div>
+              <div style="display:flex;flex-wrap:wrap;gap:6px;font-family:'IBM Plex Mono',monospace;font-size:10px;letter-spacing:0.06em;text-transform:uppercase">
+                <span style="background:#0B1E24;border:1px solid #1E3A42;color:#8AA6AC;padding:4px 8px">🪑 Bench 14</span>
+                
+                
+                <span style="margin-left:auto;color:#5E7C82">Tap ↻</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="gz-face gz-face-back" style="position:absolute;inset:0;background:#F5EFDF;border:2px solid #E9A93C;box-shadow:0 14px 34px rgba(0,0,0,0.45);display:none;grid-template-rows:auto 1fr auto;overflow:hidden;color:#14343C">
+            <div style="display:flex;align-items:center;justify-content:space-between;gap:10px;background:#E9A93C;padding:8px 14px">
+              <span style="display:flex;align-items:center;gap:7px;font-family:'Anton',Impact,sans-serif;font-size:16px;line-height:1;color:#0B1E24;text-transform:uppercase"><span style="font-size:16px">🪓</span>Mancs</span>
+              <span style="font-family:'IBM Plex Mono',monospace;font-size:9.5px;font-weight:600;letter-spacing:0.16em;color:#0B1E24">#1</span>
+            </div>
+            <div style="padding:16px 16px 0;overflow:auto">
+              <p style="font-family:'Archivo',sans-serif;font-weight:700;font-size:14px;text-transform:uppercase;color:#A3271F;margin:0 0 8px;line-height:1.3">The sheriff holds the safe zone — barely.</p>
+              <p style="font-size:15px;line-height:1.6;margin:0;text-wrap:pretty">Fraser's worst week of the season — 41 points, with 14 more rotting on the bench — and still nobody could close in. Haaland's goal against Sunderland put 12 on the armband, but the rest of the squad shuffled. A 53-point cushion over Warren's Meh United means the hatchet stays in the sheriff's hand for now. Watch the treeline.</p>
+            </div>
+            <div style="padding:12px 16px 14px;font-family:'IBM Plex Mono',monospace;font-size:10px;letter-spacing:0.08em;text-transform:uppercase;color:#7A8480;border-top:1px solid #D8CFB6;display:flex;justify-content:space-between;gap:10px">
+              <span>GW5 41 · Total 388 · Bench 14</span>
+              <span>Tap ↻</span>
+            </div>
+          </div>
+
+        </div>
+
+      <div role="button" tabindex="0" class="gz-card" data-card-index="1" style="position:relative;height:460px;cursor:pointer">
+
+          <div class="gz-face gz-face-front" style="position:absolute;inset:0;background:linear-gradient(160deg,#153C46 0%,#0C242B 55%,#102A31 100%);border:2px solid #C9CDD2;box-shadow:0 14px 34px rgba(0,0,0,0.45),inset 0 0 0 1px rgba(255,255,255,0.04);display:grid;grid-template-rows:auto auto 1fr auto;overflow:hidden">
+            <div style="display:flex;align-items:center;justify-content:space-between;gap:10px;background:#C9CDD2;padding:8px 14px">
+              <span style="font-family:'Anton',Impact,sans-serif;font-size:20px;line-height:1;color:#0B1E24">#2</span>
+              <span style="font-family:'IBM Plex Mono',monospace;font-size:9.5px;font-weight:600;letter-spacing:0.16em;text-transform:uppercase;color:#0B1E24">Foil edition</span>
+            </div>
+            <div style="padding:16px 16px 0">
+              <div style="display:flex;align-items:center;gap:8px;margin-bottom:6px">
+                <span style="font-size:22px;line-height:1">🏹</span>
+                <span style="font-family:'IBM Plex Mono',monospace;font-size:10px;font-weight:600;letter-spacing:0.1em;text-transform:uppercase;color:#7E9AA0">as Daryl Dixon</span>
+              </div>
+              <h3 style="font-family:'Anton',Impact,sans-serif;font-weight:400;font-size:clamp(22px,2.4vw,28px);line-height:1.02;margin:0;text-transform:uppercase;color:#FFFFFF;word-break:break-word">Meh United</h3>
+              <p style="font-family:'Archivo',sans-serif;font-size:12.5px;letter-spacing:0.04em;text-transform:uppercase;color:#8AA6AC;margin:6px 0 0">Warren Eades</p>
+            </div>
+            <div style="padding:14px 16px 0;display:flex;align-items:flex-end;gap:14px">
+              <div>
+                <div style="font-family:'IBM Plex Mono',monospace;font-size:9.5px;letter-spacing:0.14em;text-transform:uppercase;color:#7E9AA0">GW5</div>
+                <div style="font-family:'Anton',Impact,sans-serif;font-size:64px;line-height:0.86;color:#5FD08A;font-variant-numeric:tabular-nums">72</div>
+              </div>
+              <div style="padding-bottom:6px">
+                <div style="font-family:'IBM Plex Mono',monospace;font-size:9.5px;letter-spacing:0.14em;text-transform:uppercase;color:#7E9AA0">Season</div>
+                <div style="font-family:'IBM Plex Mono',monospace;font-size:24px;font-weight:600;color:#FFFFFF;font-variant-numeric:tabular-nums">335</div>
+              </div>
+              <div style="margin-left:auto;padding-bottom:8px;text-align:right">
+                <div style="font-family:'IBM Plex Mono',monospace;font-size:15px;font-weight:600;color:#5FD08A">▲3</div>
+                <div style="font-family:'IBM Plex Mono',monospace;font-size:9.5px;letter-spacing:0.1em;text-transform:uppercase;color:#7E9AA0">places</div>
+              </div>
+            </div>
+            <div style="padding:14px 16px 16px;display:grid;gap:8px">
+              <div style="display:flex;align-items:center;gap:8px;background:#0B1E24;border:1px solid #1E3A42;padding:8px 10px">
+                <span style="font-size:14px">🎖️</span>
+                <span style="font-family:'Archivo',sans-serif;font-weight:700;font-size:13.5px;color:#EAF2F0;flex:1;min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap">Erling Haaland</span>
+                <span style="font-family:'IBM Plex Mono',monospace;font-size:14px;font-weight:600;color:#E9A93C">12</span>
+              </div>
+              <div style="display:flex;flex-wrap:wrap;gap:6px;font-family:'IBM Plex Mono',monospace;font-size:10px;letter-spacing:0.06em;text-transform:uppercase">
+                <span style="background:#0B1E24;border:1px solid #1E3A42;color:#8AA6AC;padding:4px 8px">🪑 Bench 10</span>
+                
+                <span style="background:#5FD08A;color:#0B1E24;padding:4px 8px;font-weight:600">GW5 2ND-BEST</span>
+                <span style="margin-left:auto;color:#5E7C82">Tap ↻</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="gz-face gz-face-back" style="position:absolute;inset:0;background:#F5EFDF;border:2px solid #C9CDD2;box-shadow:0 14px 34px rgba(0,0,0,0.45);display:none;grid-template-rows:auto 1fr auto;overflow:hidden;color:#14343C">
+            <div style="display:flex;align-items:center;justify-content:space-between;gap:10px;background:#C9CDD2;padding:8px 14px">
+              <span style="display:flex;align-items:center;gap:7px;font-family:'Anton',Impact,sans-serif;font-size:16px;line-height:1;color:#0B1E24;text-transform:uppercase"><span style="font-size:16px">🏹</span>Meh United</span>
+              <span style="font-family:'IBM Plex Mono',monospace;font-size:9.5px;font-weight:600;letter-spacing:0.16em;color:#0B1E24">#2</span>
+            </div>
+            <div style="padding:16px 16px 0;overflow:auto">
+              <p style="font-family:'Archivo',sans-serif;font-weight:700;font-size:14px;text-transform:uppercase;color:#A3271F;margin:0 0 8px;line-height:1.3">Daryl rides out of the wilderness — 5th to 2nd.</p>
+              <p style="font-size:15px;line-height:1.6;margin:0;text-wrap:pretty">No chip, no fuss, one crossbow bolt through the herd: 72 points, the second-best score of the week and a three-place climb. Haaland's armband added 12, and a further 10 points stayed on the bench. It also seals September — 219 points across GW3 to GW5 makes Warren the Manager of the Month.</p>
+            </div>
+            <div style="padding:12px 16px 14px;font-family:'IBM Plex Mono',monospace;font-size:10px;letter-spacing:0.08em;text-transform:uppercase;color:#7A8480;border-top:1px solid #D8CFB6;display:flex;justify-content:space-between;gap:10px">
+              <span>GW5 72 · Total 335 · Bench 10</span>
+              <span>Tap ↻</span>
+            </div>
+          </div>
+
+        </div>
+
+      <div role="button" tabindex="0" class="gz-card" data-card-index="2" style="position:relative;height:460px;cursor:pointer">
+
+          <div class="gz-face gz-face-front" style="position:absolute;inset:0;background:linear-gradient(160deg,#153C46 0%,#0C242B 55%,#102A31 100%);border:2px solid #C08A45;box-shadow:0 14px 34px rgba(0,0,0,0.45),inset 0 0 0 1px rgba(255,255,255,0.04);display:grid;grid-template-rows:auto auto 1fr auto;overflow:hidden">
+            <div style="display:flex;align-items:center;justify-content:space-between;gap:10px;background:#C08A45;padding:8px 14px">
+              <span style="font-family:'Anton',Impact,sans-serif;font-size:20px;line-height:1;color:#0B1E24">#3</span>
+              <span style="font-family:'IBM Plex Mono',monospace;font-size:9.5px;font-weight:600;letter-spacing:0.16em;text-transform:uppercase;color:#0B1E24">Foil edition</span>
+            </div>
+            <div style="padding:16px 16px 0">
+              <div style="display:flex;align-items:center;gap:8px;margin-bottom:6px">
+                <span style="font-size:22px;line-height:1">🗡️</span>
+                <span style="font-family:'IBM Plex Mono',monospace;font-size:10px;font-weight:600;letter-spacing:0.1em;text-transform:uppercase;color:#7E9AA0">as Michonne</span>
+              </div>
+              <h3 style="font-family:'Anton',Impact,sans-serif;font-weight:400;font-size:clamp(22px,2.4vw,28px);line-height:1.02;margin:0;text-transform:uppercase;color:#FFFFFF;word-break:break-word">Jib Jib</h3>
+              <p style="font-family:'Archivo',sans-serif;font-size:12.5px;letter-spacing:0.04em;text-transform:uppercase;color:#8AA6AC;margin:6px 0 0">jib lurie</p>
+            </div>
+            <div style="padding:14px 16px 0;display:flex;align-items:flex-end;gap:14px">
+              <div>
+                <div style="font-family:'IBM Plex Mono',monospace;font-size:9.5px;letter-spacing:0.14em;text-transform:uppercase;color:#7E9AA0">GW5</div>
+                <div style="font-family:'Anton',Impact,sans-serif;font-size:64px;line-height:0.86;color:#FFFFFF;font-variant-numeric:tabular-nums">47</div>
+              </div>
+              <div style="padding-bottom:6px">
+                <div style="font-family:'IBM Plex Mono',monospace;font-size:9.5px;letter-spacing:0.14em;text-transform:uppercase;color:#7E9AA0">Season</div>
+                <div style="font-family:'IBM Plex Mono',monospace;font-size:24px;font-weight:600;color:#FFFFFF;font-variant-numeric:tabular-nums">320</div>
+              </div>
+              <div style="margin-left:auto;padding-bottom:8px;text-align:right">
+                <div style="font-family:'IBM Plex Mono',monospace;font-size:15px;font-weight:600;color:#F2705C">▼1</div>
+                <div style="font-family:'IBM Plex Mono',monospace;font-size:9.5px;letter-spacing:0.1em;text-transform:uppercase;color:#7E9AA0">places</div>
+              </div>
+            </div>
+            <div style="padding:14px 16px 16px;display:grid;gap:8px">
+              <div style="display:flex;align-items:center;gap:8px;background:#0B1E24;border:1px solid #1E3A42;padding:8px 10px">
+                <span style="font-size:14px">🎖️</span>
+                <span style="font-family:'Archivo',sans-serif;font-weight:700;font-size:13.5px;color:#EAF2F0;flex:1;min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap">Erling Haaland</span>
+                <span style="font-family:'IBM Plex Mono',monospace;font-size:14px;font-weight:600;color:#E9A93C">12</span>
+              </div>
+              <div style="display:flex;flex-wrap:wrap;gap:6px;font-family:'IBM Plex Mono',monospace;font-size:10px;letter-spacing:0.06em;text-transform:uppercase">
+                <span style="background:#0B1E24;border:1px solid #1E3A42;color:#8AA6AC;padding:4px 8px">🪑 Bench 17</span>
+                
+                
+                <span style="margin-left:auto;color:#5E7C82">Tap ↻</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="gz-face gz-face-back" style="position:absolute;inset:0;background:#F5EFDF;border:2px solid #C08A45;box-shadow:0 14px 34px rgba(0,0,0,0.45);display:none;grid-template-rows:auto 1fr auto;overflow:hidden;color:#14343C">
+            <div style="display:flex;align-items:center;justify-content:space-between;gap:10px;background:#C08A45;padding:8px 14px">
+              <span style="display:flex;align-items:center;gap:7px;font-family:'Anton',Impact,sans-serif;font-size:16px;line-height:1;color:#0B1E24;text-transform:uppercase"><span style="font-size:16px">🗡️</span>Jib Jib</span>
+              <span style="font-family:'IBM Plex Mono',monospace;font-size:9.5px;font-weight:600;letter-spacing:0.16em;color:#0B1E24">#3</span>
+            </div>
+            <div style="padding:16px 16px 0;overflow:auto">
+              <p style="font-family:'Archivo',sans-serif;font-weight:700;font-size:14px;text-transform:uppercase;color:#A3271F;margin:0 0 8px;line-height:1.3">Michonne's blade stays sheathed — 17 points never left the bench.</p>
+              <p style="font-size:15px;line-height:1.6;margin:0;text-wrap:pretty">A place lost to 3rd on 47 points. Haaland's armband was good for 12, but the real horror sat on the bench: 17 points stranded, the most of anyone in the league this week. A katana only cuts when it is drawn.</p>
+            </div>
+            <div style="padding:12px 16px 14px;font-family:'IBM Plex Mono',monospace;font-size:10px;letter-spacing:0.08em;text-transform:uppercase;color:#7A8480;border-top:1px solid #D8CFB6;display:flex;justify-content:space-between;gap:10px">
+              <span>GW5 47 · Total 320 · Bench 17</span>
+              <span>Tap ↻</span>
+            </div>
+          </div>
+
+        </div>
+
+      <div role="button" tabindex="0" class="gz-card" data-card-index="3" style="position:relative;height:460px;cursor:pointer">
+
+          <div class="gz-face gz-face-front" style="position:absolute;inset:0;background:linear-gradient(160deg,#153C46 0%,#0C242B 55%,#102A31 100%);border:2px solid #26505C;box-shadow:0 14px 34px rgba(0,0,0,0.45),inset 0 0 0 1px rgba(255,255,255,0.04);display:grid;grid-template-rows:auto auto 1fr auto;overflow:hidden">
+            <div style="display:flex;align-items:center;justify-content:space-between;gap:10px;background:#26505C;padding:8px 14px">
+              <span style="font-family:'Anton',Impact,sans-serif;font-size:20px;line-height:1;color:#0B1E24">#4</span>
+              <span style="font-family:'IBM Plex Mono',monospace;font-size:9.5px;font-weight:600;letter-spacing:0.16em;text-transform:uppercase;color:#0B1E24">Standard issue</span>
+            </div>
+            <div style="padding:16px 16px 0">
+              <div style="display:flex;align-items:center;gap:8px;margin-bottom:6px">
+                <span style="font-size:22px;line-height:1">🔪</span>
+                <span style="font-family:'IBM Plex Mono',monospace;font-size:10px;font-weight:600;letter-spacing:0.1em;text-transform:uppercase;color:#7E9AA0">as Carol Peletier</span>
+              </div>
+              <h3 style="font-family:'Anton',Impact,sans-serif;font-weight:400;font-size:clamp(22px,2.4vw,28px);line-height:1.02;margin:0;text-transform:uppercase;color:#FFFFFF;word-break:break-word">Barco Polo</h3>
+              <p style="font-family:'Archivo',sans-serif;font-size:12.5px;letter-spacing:0.04em;text-transform:uppercase;color:#8AA6AC;margin:6px 0 0">Brent Fisher</p>
+            </div>
+            <div style="padding:14px 16px 0;display:flex;align-items:flex-end;gap:14px">
+              <div>
+                <div style="font-family:'IBM Plex Mono',monospace;font-size:9.5px;letter-spacing:0.14em;text-transform:uppercase;color:#7E9AA0">GW5</div>
+                <div style="font-family:'Anton',Impact,sans-serif;font-size:64px;line-height:0.86;color:#FFFFFF;font-variant-numeric:tabular-nums">48</div>
+              </div>
+              <div style="padding-bottom:6px">
+                <div style="font-family:'IBM Plex Mono',monospace;font-size:9.5px;letter-spacing:0.14em;text-transform:uppercase;color:#7E9AA0">Season</div>
+                <div style="font-family:'IBM Plex Mono',monospace;font-size:24px;font-weight:600;color:#FFFFFF;font-variant-numeric:tabular-nums">319</div>
+              </div>
+              <div style="margin-left:auto;padding-bottom:8px;text-align:right">
+                <div style="font-family:'IBM Plex Mono',monospace;font-size:15px;font-weight:600;color:#F2705C">▼1</div>
+                <div style="font-family:'IBM Plex Mono',monospace;font-size:9.5px;letter-spacing:0.1em;text-transform:uppercase;color:#7E9AA0">places</div>
+              </div>
+            </div>
+            <div style="padding:14px 16px 16px;display:grid;gap:8px">
+              <div style="display:flex;align-items:center;gap:8px;background:#0B1E24;border:1px solid #1E3A42;padding:8px 10px">
+                <span style="font-size:14px">🎖️</span>
+                <span style="font-family:'Archivo',sans-serif;font-weight:700;font-size:13.5px;color:#EAF2F0;flex:1;min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap">Erling Haaland</span>
+                <span style="font-family:'IBM Plex Mono',monospace;font-size:14px;font-weight:600;color:#E9A93C">12</span>
+              </div>
+              <div style="display:flex;flex-wrap:wrap;gap:6px;font-family:'IBM Plex Mono',monospace;font-size:10px;letter-spacing:0.06em;text-transform:uppercase">
+                <span style="background:#0B1E24;border:1px solid #1E3A42;color:#8AA6AC;padding:4px 8px">🪑 Bench 14</span>
+                
+                
+                <span style="margin-left:auto;color:#5E7C82">Tap ↻</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="gz-face gz-face-back" style="position:absolute;inset:0;background:#F5EFDF;border:2px solid #26505C;box-shadow:0 14px 34px rgba(0,0,0,0.45);display:none;grid-template-rows:auto 1fr auto;overflow:hidden;color:#14343C">
+            <div style="display:flex;align-items:center;justify-content:space-between;gap:10px;background:#26505C;padding:8px 14px">
+              <span style="display:flex;align-items:center;gap:7px;font-family:'Anton',Impact,sans-serif;font-size:16px;line-height:1;color:#0B1E24;text-transform:uppercase"><span style="font-size:16px">🔪</span>Barco Polo</span>
+              <span style="font-family:'IBM Plex Mono',monospace;font-size:9.5px;font-weight:600;letter-spacing:0.16em;color:#0B1E24">#4</span>
+            </div>
+            <div style="padding:16px 16px 0;overflow:auto">
+              <p style="font-family:'Archivo',sans-serif;font-weight:700;font-size:14px;text-transform:uppercase;color:#A3271F;margin:0 0 8px;line-height:1.3">Carol keeps calm — and lands bang on the average.</p>
+              <p style="font-size:15px;line-height:1.6;margin:0;text-wrap:pretty">Brent scored 48, exactly the FPL-wide average, and slips a place to 4th — a single point behind Jib Jib. Haaland's armband brought 12, while 14 more points idled on the bench. Quiet, careful, always one step ahead of the herd: the top three are within touching distance.</p>
+            </div>
+            <div style="padding:12px 16px 14px;font-family:'IBM Plex Mono',monospace;font-size:10px;letter-spacing:0.08em;text-transform:uppercase;color:#7A8480;border-top:1px solid #D8CFB6;display:flex;justify-content:space-between;gap:10px">
+              <span>GW5 48 · Total 319 · Bench 14</span>
+              <span>Tap ↻</span>
+            </div>
+          </div>
+
+        </div>
+
+      <div role="button" tabindex="0" class="gz-card" data-card-index="4" style="position:relative;height:460px;cursor:pointer">
+
+          <div class="gz-face gz-face-front" style="position:absolute;inset:0;background:linear-gradient(160deg,#153C46 0%,#0C242B 55%,#102A31 100%);border:2px solid #26505C;box-shadow:0 14px 34px rgba(0,0,0,0.45),inset 0 0 0 1px rgba(255,255,255,0.04);display:grid;grid-template-rows:auto auto 1fr auto;overflow:hidden">
+            <div style="display:flex;align-items:center;justify-content:space-between;gap:10px;background:#26505C;padding:8px 14px">
+              <span style="font-family:'Anton',Impact,sans-serif;font-size:20px;line-height:1;color:#0B1E24">#5</span>
+              <span style="font-family:'IBM Plex Mono',monospace;font-size:9.5px;font-weight:600;letter-spacing:0.16em;text-transform:uppercase;color:#0B1E24">Standard issue</span>
+            </div>
+            <div style="padding:16px 16px 0">
+              <div style="display:flex;align-items:center;gap:8px;margin-bottom:6px">
+                <span style="font-size:22px;line-height:1">🌾</span>
+                <span style="font-family:'IBM Plex Mono',monospace;font-size:10px;font-weight:600;letter-spacing:0.1em;text-transform:uppercase;color:#7E9AA0">as Maggie Greene</span>
+              </div>
+              <h3 style="font-family:'Anton',Impact,sans-serif;font-weight:400;font-size:clamp(22px,2.4vw,28px);line-height:1.02;margin:0;text-transform:uppercase;color:#FFFFFF;word-break:break-word">Moist Clams</h3>
+              <p style="font-family:'Archivo',sans-serif;font-size:12.5px;letter-spacing:0.04em;text-transform:uppercase;color:#8AA6AC;margin:6px 0 0">Declan Braithwaite</p>
+            </div>
+            <div style="padding:14px 16px 0;display:flex;align-items:flex-end;gap:14px">
+              <div>
+                <div style="font-family:'IBM Plex Mono',monospace;font-size:9.5px;letter-spacing:0.14em;text-transform:uppercase;color:#7E9AA0">GW5</div>
+                <div style="font-family:'Anton',Impact,sans-serif;font-size:64px;line-height:0.86;color:#FFFFFF;font-variant-numeric:tabular-nums">46</div>
+              </div>
+              <div style="padding-bottom:6px">
+                <div style="font-family:'IBM Plex Mono',monospace;font-size:9.5px;letter-spacing:0.14em;text-transform:uppercase;color:#7E9AA0">Season</div>
+                <div style="font-family:'IBM Plex Mono',monospace;font-size:24px;font-weight:600;color:#FFFFFF;font-variant-numeric:tabular-nums">311</div>
+              </div>
+              <div style="margin-left:auto;padding-bottom:8px;text-align:right">
+                <div style="font-family:'IBM Plex Mono',monospace;font-size:15px;font-weight:600;color:#F2705C">▼1</div>
+                <div style="font-family:'IBM Plex Mono',monospace;font-size:9.5px;letter-spacing:0.1em;text-transform:uppercase;color:#7E9AA0">places</div>
+              </div>
+            </div>
+            <div style="padding:14px 16px 16px;display:grid;gap:8px">
+              <div style="display:flex;align-items:center;gap:8px;background:#0B1E24;border:1px solid #1E3A42;padding:8px 10px">
+                <span style="font-size:14px">🎖️</span>
+                <span style="font-family:'Archivo',sans-serif;font-weight:700;font-size:13.5px;color:#EAF2F0;flex:1;min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap">Erling Haaland</span>
+                <span style="font-family:'IBM Plex Mono',monospace;font-size:14px;font-weight:600;color:#E9A93C">12</span>
+              </div>
+              <div style="display:flex;flex-wrap:wrap;gap:6px;font-family:'IBM Plex Mono',monospace;font-size:10px;letter-spacing:0.06em;text-transform:uppercase">
+                <span style="background:#0B1E24;border:1px solid #1E3A42;color:#8AA6AC;padding:4px 8px">🪑 Bench 1</span>
+                
+                
+                <span style="margin-left:auto;color:#5E7C82">Tap ↻</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="gz-face gz-face-back" style="position:absolute;inset:0;background:#F5EFDF;border:2px solid #26505C;box-shadow:0 14px 34px rgba(0,0,0,0.45);display:none;grid-template-rows:auto 1fr auto;overflow:hidden;color:#14343C">
+            <div style="display:flex;align-items:center;justify-content:space-between;gap:10px;background:#26505C;padding:8px 14px">
+              <span style="display:flex;align-items:center;gap:7px;font-family:'Anton',Impact,sans-serif;font-size:16px;line-height:1;color:#0B1E24;text-transform:uppercase"><span style="font-size:16px">🌾</span>Moist Clams</span>
+              <span style="font-family:'IBM Plex Mono',monospace;font-size:9.5px;font-weight:600;letter-spacing:0.16em;color:#0B1E24">#5</span>
+            </div>
+            <div style="padding:16px 16px 0;overflow:auto">
+              <p style="font-family:'Archivo',sans-serif;font-weight:700;font-size:14px;text-transform:uppercase;color:#A3271F;margin:0 0 8px;line-height:1.3">Maggie keeps the farm spotless — the harvest is thin.</p>
+              <p style="font-size:15px;line-height:1.6;margin:0;text-wrap:pretty">Declan made two transfers without taking a hit and left just 1 point on the bench, the tidiest in the league bar Byron's none. It still wasn't enough: 46 points and a place lost to 5th. Haaland's armband brought 12. The fences are up; the points just aren't growing.</p>
+            </div>
+            <div style="padding:12px 16px 14px;font-family:'IBM Plex Mono',monospace;font-size:10px;letter-spacing:0.08em;text-transform:uppercase;color:#7A8480;border-top:1px solid #D8CFB6;display:flex;justify-content:space-between;gap:10px">
+              <span>GW5 46 · Total 311 · Bench 1</span>
+              <span>Tap ↻</span>
+            </div>
+          </div>
+
+        </div>
+
+      <div role="button" tabindex="0" class="gz-card" data-card-index="5" style="position:relative;height:460px;cursor:pointer">
+
+          <div class="gz-face gz-face-front" style="position:absolute;inset:0;background:linear-gradient(160deg,#153C46 0%,#0C242B 55%,#102A31 100%);border:2px solid #26505C;box-shadow:0 14px 34px rgba(0,0,0,0.45),inset 0 0 0 1px rgba(255,255,255,0.04);display:grid;grid-template-rows:auto auto 1fr auto;overflow:hidden">
+            <div style="display:flex;align-items:center;justify-content:space-between;gap:10px;background:#26505C;padding:8px 14px">
+              <span style="font-family:'Anton',Impact,sans-serif;font-size:20px;line-height:1;color:#0B1E24">#6</span>
+              <span style="font-family:'IBM Plex Mono',monospace;font-size:9.5px;font-weight:600;letter-spacing:0.16em;text-transform:uppercase;color:#0B1E24">Standard issue</span>
+            </div>
+            <div style="padding:16px 16px 0">
+              <div style="display:flex;align-items:center;gap:8px;margin-bottom:6px">
+                <span style="font-size:22px;line-height:1">🏚️</span>
+                <span style="font-family:'IBM Plex Mono',monospace;font-size:10px;font-weight:600;letter-spacing:0.1em;text-transform:uppercase;color:#7E9AA0">as The Governor</span>
+              </div>
+              <h3 style="font-family:'Anton',Impact,sans-serif;font-weight:400;font-size:clamp(22px,2.4vw,28px);line-height:1.02;margin:0;text-transform:uppercase;color:#FFFFFF;word-break:break-word">Haaland'sHaulers2.0</h3>
+              <p style="font-family:'Archivo',sans-serif;font-size:12.5px;letter-spacing:0.04em;text-transform:uppercase;color:#8AA6AC;margin:6px 0 0">Dalen Bunce</p>
+            </div>
+            <div style="padding:14px 16px 0;display:flex;align-items:flex-end;gap:14px">
+              <div>
+                <div style="font-family:'IBM Plex Mono',monospace;font-size:9.5px;letter-spacing:0.14em;text-transform:uppercase;color:#7E9AA0">GW5</div>
+                <div style="font-family:'Anton',Impact,sans-serif;font-size:64px;line-height:0.86;color:#F2705C;font-variant-numeric:tabular-nums">43</div>
+              </div>
+              <div style="padding-bottom:6px">
+                <div style="font-family:'IBM Plex Mono',monospace;font-size:9.5px;letter-spacing:0.14em;text-transform:uppercase;color:#7E9AA0">Season</div>
+                <div style="font-family:'IBM Plex Mono',monospace;font-size:24px;font-weight:600;color:#FFFFFF;font-variant-numeric:tabular-nums">285</div>
+              </div>
+              <div style="margin-left:auto;padding-bottom:8px;text-align:right">
+                <div style="font-family:'IBM Plex Mono',monospace;font-size:15px;font-weight:600;color:#7E9AA0">—</div>
+                <div style="font-family:'IBM Plex Mono',monospace;font-size:9.5px;letter-spacing:0.1em;text-transform:uppercase;color:#7E9AA0">no change</div>
+              </div>
+            </div>
+            <div style="padding:14px 16px 16px;display:grid;gap:8px">
+              <div style="display:flex;align-items:center;gap:8px;background:#0B1E24;border:1px solid #1E3A42;padding:8px 10px">
+                <span style="font-size:14px">🎖️</span>
+                <span style="font-family:'Archivo',sans-serif;font-weight:700;font-size:13.5px;color:#EAF2F0;flex:1;min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap">Cole Palmer</span>
+                <span style="font-family:'IBM Plex Mono',monospace;font-size:14px;font-weight:600;color:#F2705C">4</span>
+              </div>
+              <div style="display:flex;flex-wrap:wrap;gap:6px;font-family:'IBM Plex Mono',monospace;font-size:10px;letter-spacing:0.06em;text-transform:uppercase">
+                <span style="background:#0B1E24;border:1px solid #1E3A42;color:#8AA6AC;padding:4px 8px">🪑 Bench 2</span>
+                
+                
+                <span style="margin-left:auto;color:#5E7C82">Tap ↻</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="gz-face gz-face-back" style="position:absolute;inset:0;background:#F5EFDF;border:2px solid #26505C;box-shadow:0 14px 34px rgba(0,0,0,0.45);display:none;grid-template-rows:auto 1fr auto;overflow:hidden;color:#14343C">
+            <div style="display:flex;align-items:center;justify-content:space-between;gap:10px;background:#26505C;padding:8px 14px">
+              <span style="display:flex;align-items:center;gap:7px;font-family:'Anton',Impact,sans-serif;font-size:16px;line-height:1;color:#0B1E24;text-transform:uppercase"><span style="font-size:16px">🏚️</span>Haaland'sHaulers2.0</span>
+              <span style="font-family:'IBM Plex Mono',monospace;font-size:9.5px;font-weight:600;letter-spacing:0.16em;color:#0B1E24">#6</span>
+            </div>
+            <div style="padding:16px 16px 0;overflow:auto">
+              <p style="font-family:'Archivo',sans-serif;font-weight:700;font-size:14px;text-transform:uppercase;color:#A3271F;margin:0 0 8px;line-height:1.3">The Governor trades his people for Palmer — and it costs him.</p>
+              <p style="font-size:15px;line-height:1.6;margin:0;text-wrap:pretty">Dalen built a name on Haaland, then pulled the armband the week Haaland scored and handed it to Cole Palmer. Palmer returned 2, doubling to just 4 — eight points short of the 12 banked by the eight other managers who stayed with Haaland. 43 points, no movement from 6th, and a name that needs some explaining.</p>
+            </div>
+            <div style="padding:12px 16px 14px;font-family:'IBM Plex Mono',monospace;font-size:10px;letter-spacing:0.08em;text-transform:uppercase;color:#7A8480;border-top:1px solid #D8CFB6;display:flex;justify-content:space-between;gap:10px">
+              <span>GW5 43 · Total 285 · Bench 2</span>
+              <span>Tap ↻</span>
+            </div>
+          </div>
+
+        </div>
+
+      <div role="button" tabindex="0" class="gz-card" data-card-index="6" style="position:relative;height:460px;cursor:pointer">
+
+          <div class="gz-face gz-face-front" style="position:absolute;inset:0;background:linear-gradient(160deg,#153C46 0%,#0C242B 55%,#102A31 100%);border:2px solid #26505C;box-shadow:0 14px 34px rgba(0,0,0,0.45),inset 0 0 0 1px rgba(255,255,255,0.04);display:grid;grid-template-rows:auto auto 1fr auto;overflow:hidden">
+            <div style="display:flex;align-items:center;justify-content:space-between;gap:10px;background:#26505C;padding:8px 14px">
+              <span style="font-family:'Anton',Impact,sans-serif;font-size:20px;line-height:1;color:#0B1E24">#7</span>
+              <span style="font-family:'IBM Plex Mono',monospace;font-size:9.5px;font-weight:600;letter-spacing:0.16em;text-transform:uppercase;color:#0B1E24">Standard issue</span>
+            </div>
+            <div style="padding:16px 16px 0">
+              <div style="display:flex;align-items:center;gap:8px;margin-bottom:6px">
+                <span style="font-size:22px;line-height:1">🏏</span>
+                <span style="font-family:'IBM Plex Mono',monospace;font-size:10px;font-weight:600;letter-spacing:0.1em;text-transform:uppercase;color:#7E9AA0">as Negan</span>
+              </div>
+              <h3 style="font-family:'Anton',Impact,sans-serif;font-weight:400;font-size:clamp(22px,2.4vw,28px);line-height:1.02;margin:0;text-transform:uppercase;color:#FFFFFF;word-break:break-word">TBs Turtles</h3>
+              <p style="font-family:'Archivo',sans-serif;font-size:12.5px;letter-spacing:0.04em;text-transform:uppercase;color:#8AA6AC;margin:6px 0 0">Andrew Bryce</p>
+            </div>
+            <div style="padding:14px 16px 0;display:flex;align-items:flex-end;gap:14px">
+              <div>
+                <div style="font-family:'IBM Plex Mono',monospace;font-size:9.5px;letter-spacing:0.14em;text-transform:uppercase;color:#7E9AA0">GW5</div>
+                <div style="font-family:'Anton',Impact,sans-serif;font-size:64px;line-height:0.86;color:#5FD08A;font-variant-numeric:tabular-nums">78</div>
+              </div>
+              <div style="padding-bottom:6px">
+                <div style="font-family:'IBM Plex Mono',monospace;font-size:9.5px;letter-spacing:0.14em;text-transform:uppercase;color:#7E9AA0">Season</div>
+                <div style="font-family:'IBM Plex Mono',monospace;font-size:24px;font-weight:600;color:#FFFFFF;font-variant-numeric:tabular-nums">280</div>
+              </div>
+              <div style="margin-left:auto;padding-bottom:8px;text-align:right">
+                <div style="font-family:'IBM Plex Mono',monospace;font-size:15px;font-weight:600;color:#5FD08A">▲3</div>
+                <div style="font-family:'IBM Plex Mono',monospace;font-size:9.5px;letter-spacing:0.1em;text-transform:uppercase;color:#7E9AA0">places</div>
+              </div>
+            </div>
+            <div style="padding:14px 16px 16px;display:grid;gap:8px">
+              <div style="display:flex;align-items:center;gap:8px;background:#0B1E24;border:1px solid #1E3A42;padding:8px 10px">
+                <span style="font-size:14px">🎖️</span>
+                <span style="font-family:'Archivo',sans-serif;font-weight:700;font-size:13.5px;color:#EAF2F0;flex:1;min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap">Igor Thiago</span>
+                <span style="font-family:'IBM Plex Mono',monospace;font-size:14px;font-weight:600;color:#E9A93C">10</span>
+              </div>
+              <div style="display:flex;flex-wrap:wrap;gap:6px;font-family:'IBM Plex Mono',monospace;font-size:10px;letter-spacing:0.06em;text-transform:uppercase">
+                <span style="background:#0B1E24;border:1px solid #1E3A42;color:#8AA6AC;padding:4px 8px">🪑 Bench 2</span>
+                
+                <span style="background:#5FD08A;color:#0B1E24;padding:4px 8px;font-weight:600">GW5 TOP</span>
+                <span style="margin-left:auto;color:#5E7C82">Tap ↻</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="gz-face gz-face-back" style="position:absolute;inset:0;background:#F5EFDF;border:2px solid #26505C;box-shadow:0 14px 34px rgba(0,0,0,0.45);display:none;grid-template-rows:auto 1fr auto;overflow:hidden;color:#14343C">
+            <div style="display:flex;align-items:center;justify-content:space-between;gap:10px;background:#26505C;padding:8px 14px">
+              <span style="display:flex;align-items:center;gap:7px;font-family:'Anton',Impact,sans-serif;font-size:16px;line-height:1;color:#0B1E24;text-transform:uppercase"><span style="font-size:16px">🏏</span>TBs Turtles</span>
+              <span style="font-family:'IBM Plex Mono',monospace;font-size:9.5px;font-weight:600;letter-spacing:0.16em;color:#0B1E24">#7</span>
+            </div>
+            <div style="padding:16px 16px 0;overflow:auto">
+              <p style="font-family:'Archivo',sans-serif;font-weight:700;font-size:14px;text-transform:uppercase;color:#A3271F;margin:0 0 8px;line-height:1.3">Negan swings, and the whole table feels it.</p>
+              <p style="font-size:15px;line-height:1.6;margin:0;text-wrap:pretty">Andrew's fifth straight Igor Thiago armband finally paid: 5 points, doubling to 10, inside the league's best score of the week — 78, his highest of the season by 26 and 30 clear of the FPL-wide average. Last place to 7th, three places in one swing, level on 280 with abc and ahead on the official order. Lucille has her swagger back.</p>
+            </div>
+            <div style="padding:12px 16px 14px;font-family:'IBM Plex Mono',monospace;font-size:10px;letter-spacing:0.08em;text-transform:uppercase;color:#7A8480;border-top:1px solid #D8CFB6;display:flex;justify-content:space-between;gap:10px">
+              <span>GW5 78 · Total 280 · Bench 2</span>
+              <span>Tap ↻</span>
+            </div>
+          </div>
+
+        </div>
+
+      <div role="button" tabindex="0" class="gz-card" data-card-index="7" style="position:relative;height:460px;cursor:pointer">
+
+          <div class="gz-face gz-face-front" style="position:absolute;inset:0;background:linear-gradient(160deg,#153C46 0%,#0C242B 55%,#102A31 100%);border:2px solid #26505C;box-shadow:0 14px 34px rgba(0,0,0,0.45),inset 0 0 0 1px rgba(255,255,255,0.04);display:grid;grid-template-rows:auto auto 1fr auto;overflow:hidden">
+            <div style="display:flex;align-items:center;justify-content:space-between;gap:10px;background:#26505C;padding:8px 14px">
+              <span style="font-family:'Anton',Impact,sans-serif;font-size:20px;line-height:1;color:#0B1E24">#8</span>
+              <span style="font-family:'IBM Plex Mono',monospace;font-size:9.5px;font-weight:600;letter-spacing:0.16em;text-transform:uppercase;color:#0B1E24">Standard issue</span>
+            </div>
+            <div style="padding:16px 16px 0">
+              <div style="display:flex;align-items:center;gap:8px;margin-bottom:6px">
+                <span style="font-size:22px;line-height:1">🧠</span>
+                <span style="font-family:'IBM Plex Mono',monospace;font-size:10px;font-weight:600;letter-spacing:0.1em;text-transform:uppercase;color:#7E9AA0">as Eugene Porter</span>
+              </div>
+              <h3 style="font-family:'Anton',Impact,sans-serif;font-weight:400;font-size:clamp(22px,2.4vw,28px);line-height:1.02;margin:0;text-transform:uppercase;color:#FFFFFF;word-break:break-word">abc</h3>
+              <p style="font-family:'Archivo',sans-serif;font-size:12.5px;letter-spacing:0.04em;text-transform:uppercase;color:#8AA6AC;margin:6px 0 0">David Eades</p>
+            </div>
+            <div style="padding:14px 16px 0;display:flex;align-items:flex-end;gap:14px">
+              <div>
+                <div style="font-family:'IBM Plex Mono',monospace;font-size:9.5px;letter-spacing:0.14em;text-transform:uppercase;color:#7E9AA0">GW5</div>
+                <div style="font-family:'Anton',Impact,sans-serif;font-size:64px;line-height:0.86;color:#FFFFFF;font-variant-numeric:tabular-nums">45</div>
+              </div>
+              <div style="padding-bottom:6px">
+                <div style="font-family:'IBM Plex Mono',monospace;font-size:9.5px;letter-spacing:0.14em;text-transform:uppercase;color:#7E9AA0">Season</div>
+                <div style="font-family:'IBM Plex Mono',monospace;font-size:24px;font-weight:600;color:#FFFFFF;font-variant-numeric:tabular-nums">280</div>
+              </div>
+              <div style="margin-left:auto;padding-bottom:8px;text-align:right">
+                <div style="font-family:'IBM Plex Mono',monospace;font-size:15px;font-weight:600;color:#F2705C">▼1</div>
+                <div style="font-family:'IBM Plex Mono',monospace;font-size:9.5px;letter-spacing:0.1em;text-transform:uppercase;color:#7E9AA0">places</div>
+              </div>
+            </div>
+            <div style="padding:14px 16px 16px;display:grid;gap:8px">
+              <div style="display:flex;align-items:center;gap:8px;background:#0B1E24;border:1px solid #1E3A42;padding:8px 10px">
+                <span style="font-size:14px">🎖️</span>
+                <span style="font-family:'Archivo',sans-serif;font-weight:700;font-size:13.5px;color:#EAF2F0;flex:1;min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap">Erling Haaland</span>
+                <span style="font-family:'IBM Plex Mono',monospace;font-size:14px;font-weight:600;color:#E9A93C">12</span>
+              </div>
+              <div style="display:flex;flex-wrap:wrap;gap:6px;font-family:'IBM Plex Mono',monospace;font-size:10px;letter-spacing:0.06em;text-transform:uppercase">
+                <span style="background:#0B1E24;border:1px solid #1E3A42;color:#8AA6AC;padding:4px 8px">🪑 Bench 3</span>
+                
+                
+                <span style="margin-left:auto;color:#5E7C82">Tap ↻</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="gz-face gz-face-back" style="position:absolute;inset:0;background:#F5EFDF;border:2px solid #26505C;box-shadow:0 14px 34px rgba(0,0,0,0.45);display:none;grid-template-rows:auto 1fr auto;overflow:hidden;color:#14343C">
+            <div style="display:flex;align-items:center;justify-content:space-between;gap:10px;background:#26505C;padding:8px 14px">
+              <span style="display:flex;align-items:center;gap:7px;font-family:'Anton',Impact,sans-serif;font-size:16px;line-height:1;color:#0B1E24;text-transform:uppercase"><span style="font-size:16px">🧠</span>abc</span>
+              <span style="font-family:'IBM Plex Mono',monospace;font-size:9.5px;font-weight:600;letter-spacing:0.16em;color:#0B1E24">#8</span>
+            </div>
+            <div style="padding:16px 16px 0;overflow:auto">
+              <p style="font-family:'Archivo',sans-serif;font-weight:700;font-size:14px;text-transform:uppercase;color:#A3271F;margin:0 0 8px;line-height:1.3">Eugene's plan was flawless — until the tie-break.</p>
+              <p style="font-size:15px;line-height:1.6;margin:0;text-wrap:pretty">David finished level on 280 with TBs Turtles, and the official table order put the Turtles ahead. A 45-point week, with the armband back on Haaland (12) after last week's Palmer detour, and a place lost to 8th. Eugene swore it would work. The maths disagreed.</p>
+            </div>
+            <div style="padding:12px 16px 14px;font-family:'IBM Plex Mono',monospace;font-size:10px;letter-spacing:0.08em;text-transform:uppercase;color:#7A8480;border-top:1px solid #D8CFB6;display:flex;justify-content:space-between;gap:10px">
+              <span>GW5 45 · Total 280 · Bench 3</span>
+              <span>Tap ↻</span>
+            </div>
+          </div>
+
+        </div>
+
+      <div role="button" tabindex="0" class="gz-card" data-card-index="8" style="position:relative;height:460px;cursor:pointer">
+
+          <div class="gz-face gz-face-front" style="position:absolute;inset:0;background:linear-gradient(160deg,#153C46 0%,#0C242B 55%,#102A31 100%);border:2px solid #26505C;box-shadow:0 14px 34px rgba(0,0,0,0.45),inset 0 0 0 1px rgba(255,255,255,0.04);display:grid;grid-template-rows:auto auto 1fr auto;overflow:hidden">
+            <div style="display:flex;align-items:center;justify-content:space-between;gap:10px;background:#26505C;padding:8px 14px">
+              <span style="font-family:'Anton',Impact,sans-serif;font-size:20px;line-height:1;color:#0B1E24">#9</span>
+              <span style="font-family:'IBM Plex Mono',monospace;font-size:9.5px;font-weight:600;letter-spacing:0.16em;text-transform:uppercase;color:#0B1E24">Standard issue</span>
+            </div>
+            <div style="padding:16px 16px 0">
+              <div style="display:flex;align-items:center;gap:8px;margin-bottom:6px">
+                <span style="font-size:22px;line-height:1">🥋</span>
+                <span style="font-family:'IBM Plex Mono',monospace;font-size:10px;font-weight:600;letter-spacing:0.1em;text-transform:uppercase;color:#7E9AA0">as Morgan Jones</span>
+              </div>
+              <h3 style="font-family:'Anton',Impact,sans-serif;font-weight:400;font-size:clamp(22px,2.4vw,28px);line-height:1.02;margin:0;text-transform:uppercase;color:#FFFFFF;word-break:break-word">Puttingonmyjacquet</h3>
+              <p style="font-family:'Archivo',sans-serif;font-size:12.5px;letter-spacing:0.04em;text-transform:uppercase;color:#8AA6AC;margin:6px 0 0">Luke Eades</p>
+            </div>
+            <div style="padding:14px 16px 0;display:flex;align-items:flex-end;gap:14px">
+              <div>
+                <div style="font-family:'IBM Plex Mono',monospace;font-size:9.5px;letter-spacing:0.14em;text-transform:uppercase;color:#7E9AA0">GW5</div>
+                <div style="font-family:'Anton',Impact,sans-serif;font-size:64px;line-height:0.86;color:#FFFFFF;font-variant-numeric:tabular-nums">56</div>
+              </div>
+              <div style="padding-bottom:6px">
+                <div style="font-family:'IBM Plex Mono',monospace;font-size:9.5px;letter-spacing:0.14em;text-transform:uppercase;color:#7E9AA0">Season</div>
+                <div style="font-family:'IBM Plex Mono',monospace;font-size:24px;font-weight:600;color:#FFFFFF;font-variant-numeric:tabular-nums">277</div>
+              </div>
+              <div style="margin-left:auto;padding-bottom:8px;text-align:right">
+                <div style="font-family:'IBM Plex Mono',monospace;font-size:15px;font-weight:600;color:#7E9AA0">—</div>
+                <div style="font-family:'IBM Plex Mono',monospace;font-size:9.5px;letter-spacing:0.1em;text-transform:uppercase;color:#7E9AA0">no change</div>
+              </div>
+            </div>
+            <div style="padding:14px 16px 16px;display:grid;gap:8px">
+              <div style="display:flex;align-items:center;gap:8px;background:#0B1E24;border:1px solid #1E3A42;padding:8px 10px">
+                <span style="font-size:14px">🎖️</span>
+                <span style="font-family:'Archivo',sans-serif;font-weight:700;font-size:13.5px;color:#EAF2F0;flex:1;min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap">Erling Haaland</span>
+                <span style="font-family:'IBM Plex Mono',monospace;font-size:14px;font-weight:600;color:#E9A93C">12</span>
+              </div>
+              <div style="display:flex;flex-wrap:wrap;gap:6px;font-family:'IBM Plex Mono',monospace;font-size:10px;letter-spacing:0.06em;text-transform:uppercase">
+                <span style="background:#0B1E24;border:1px solid #1E3A42;color:#8AA6AC;padding:4px 8px">🪑 Bench 9</span>
+                
+                
+                <span style="margin-left:auto;color:#5E7C82">Tap ↻</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="gz-face gz-face-back" style="position:absolute;inset:0;background:#F5EFDF;border:2px solid #26505C;box-shadow:0 14px 34px rgba(0,0,0,0.45);display:none;grid-template-rows:auto 1fr auto;overflow:hidden;color:#14343C">
+            <div style="display:flex;align-items:center;justify-content:space-between;gap:10px;background:#26505C;padding:8px 14px">
+              <span style="display:flex;align-items:center;gap:7px;font-family:'Anton',Impact,sans-serif;font-size:16px;line-height:1;color:#0B1E24;text-transform:uppercase"><span style="font-size:16px">🥋</span>Puttingonmyjacquet</span>
+              <span style="font-family:'IBM Plex Mono',monospace;font-size:9.5px;font-weight:600;letter-spacing:0.16em;color:#0B1E24">#9</span>
+            </div>
+            <div style="padding:16px 16px 0;overflow:auto">
+              <p style="font-family:'Archivo',sans-serif;font-weight:700;font-size:14px;text-transform:uppercase;color:#A3271F;margin:0 0 8px;line-height:1.3">Morgan holds his ground in 9th.</p>
+              <p style="font-size:15px;line-height:1.6;margin:0;text-wrap:pretty">Two transfers, 56 points — the third-best score of the week and 8 above the FPL-wide average — but not enough to climb. Still 9th, three points shy of abc and TBs Turtles. Haaland's armband brought 12 again for the faithful, and 9 more points sat on the bench. The staff is steady; the climb will have to wait.</p>
+            </div>
+            <div style="padding:12px 16px 14px;font-family:'IBM Plex Mono',monospace;font-size:10px;letter-spacing:0.08em;text-transform:uppercase;color:#7A8480;border-top:1px solid #D8CFB6;display:flex;justify-content:space-between;gap:10px">
+              <span>GW5 56 · Total 277 · Bench 9</span>
+              <span>Tap ↻</span>
+            </div>
+          </div>
+
+        </div>
+
+      <div role="button" tabindex="0" class="gz-card" data-card-index="9" style="position:relative;height:460px;cursor:pointer">
+
+          <div class="gz-face gz-face-front" style="position:absolute;inset:0;background:linear-gradient(160deg,#153C46 0%,#0C242B 55%,#102A31 100%);border:2px solid #26505C;box-shadow:0 14px 34px rgba(0,0,0,0.45),inset 0 0 0 1px rgba(255,255,255,0.04);display:grid;grid-template-rows:auto auto 1fr auto;overflow:hidden">
+            <div style="display:flex;align-items:center;justify-content:space-between;gap:10px;background:#26505C;padding:8px 14px">
+              <span style="font-family:'Anton',Impact,sans-serif;font-size:20px;line-height:1;color:#0B1E24">#10</span>
+              <span style="font-family:'IBM Plex Mono',monospace;font-size:9.5px;font-weight:600;letter-spacing:0.16em;text-transform:uppercase;color:#0B1E24">Standard issue</span>
+            </div>
+            <div style="padding:16px 16px 0">
+              <div style="display:flex;align-items:center;gap:8px;margin-bottom:6px">
+                <span style="font-size:22px;line-height:1">🧟</span>
+                <span style="font-family:'IBM Plex Mono',monospace;font-size:10px;font-weight:600;letter-spacing:0.1em;text-transform:uppercase;color:#7E9AA0">as A Walker</span>
+              </div>
+              <h3 style="font-family:'Anton',Impact,sans-serif;font-weight:400;font-size:clamp(22px,2.4vw,28px);line-height:1.02;margin:0;text-transform:uppercase;color:#FFFFFF;word-break:break-word">Byron's Team</h3>
+              <p style="font-family:'Archivo',sans-serif;font-size:12.5px;letter-spacing:0.04em;text-transform:uppercase;color:#8AA6AC;margin:6px 0 0">Byron Cowan</p>
+            </div>
+            <div style="padding:14px 16px 0;display:flex;align-items:flex-end;gap:14px">
+              <div>
+                <div style="font-family:'IBM Plex Mono',monospace;font-size:9.5px;letter-spacing:0.14em;text-transform:uppercase;color:#7E9AA0">GW5</div>
+                <div style="font-family:'Anton',Impact,sans-serif;font-size:64px;line-height:0.86;color:#F2705C;font-variant-numeric:tabular-nums">37</div>
+              </div>
+              <div style="padding-bottom:6px">
+                <div style="font-family:'IBM Plex Mono',monospace;font-size:9.5px;letter-spacing:0.14em;text-transform:uppercase;color:#7E9AA0">Season</div>
+                <div style="font-family:'IBM Plex Mono',monospace;font-size:24px;font-weight:600;color:#FFFFFF;font-variant-numeric:tabular-nums">262</div>
+              </div>
+              <div style="margin-left:auto;padding-bottom:8px;text-align:right">
+                <div style="font-family:'IBM Plex Mono',monospace;font-size:15px;font-weight:600;color:#F2705C">▼2</div>
+                <div style="font-family:'IBM Plex Mono',monospace;font-size:9.5px;letter-spacing:0.1em;text-transform:uppercase;color:#7E9AA0">places</div>
+              </div>
+            </div>
+            <div style="padding:14px 16px 16px;display:grid;gap:8px">
+              <div style="display:flex;align-items:center;gap:8px;background:#0B1E24;border:1px solid #1E3A42;padding:8px 10px">
+                <span style="font-size:14px">🎖️</span>
+                <span style="font-family:'Archivo',sans-serif;font-weight:700;font-size:13.5px;color:#EAF2F0;flex:1;min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap">Erling Haaland</span>
+                <span style="font-family:'IBM Plex Mono',monospace;font-size:14px;font-weight:600;color:#E9A93C">12</span>
+              </div>
+              <div style="display:flex;flex-wrap:wrap;gap:6px;font-family:'IBM Plex Mono',monospace;font-size:10px;letter-spacing:0.06em;text-transform:uppercase">
+                <span style="background:#0B1E24;border:1px solid #1E3A42;color:#8AA6AC;padding:4px 8px">🪑 Bench 0</span>
+                
+                <span style="background:#F2705C;color:#0B1E24;padding:4px 8px;font-weight:600">LAST PLACE</span>
+                <span style="margin-left:auto;color:#5E7C82">Tap ↻</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="gz-face gz-face-back" style="position:absolute;inset:0;background:#F5EFDF;border:2px solid #26505C;box-shadow:0 14px 34px rgba(0,0,0,0.45);display:none;grid-template-rows:auto 1fr auto;overflow:hidden;color:#14343C">
+            <div style="display:flex;align-items:center;justify-content:space-between;gap:10px;background:#26505C;padding:8px 14px">
+              <span style="display:flex;align-items:center;gap:7px;font-family:'Anton',Impact,sans-serif;font-size:16px;line-height:1;color:#0B1E24;text-transform:uppercase"><span style="font-size:16px">🧟</span>Byron's Team</span>
+              <span style="font-family:'IBM Plex Mono',monospace;font-size:9.5px;font-weight:600;letter-spacing:0.16em;color:#0B1E24">#10</span>
+            </div>
+            <div style="padding:16px 16px 0;overflow:auto">
+              <p style="font-family:'Archivo',sans-serif;font-weight:700;font-size:14px;text-transform:uppercase;color:#A3271F;margin:0 0 8px;line-height:1.3">Bitten. Last place, and he owns it.</p>
+              <p style="font-size:15px;line-height:1.6;margin:0;text-wrap:pretty">Haaland's armband brought 12, not a single point was stranded on the bench, and it still came to just 37 — the league's lowest this week and Byron's worst of the season. Two places lost, 15 points adrift of Puttingonmyjacquet, and the table's newest walker. He's last. He has to own it.</p>
+            </div>
+            <div style="padding:12px 16px 14px;font-family:'IBM Plex Mono',monospace;font-size:10px;letter-spacing:0.08em;text-transform:uppercase;color:#7A8480;border-top:1px solid #D8CFB6;display:flex;justify-content:space-between;gap:10px">
+              <span>GW5 37 · Total 262 · Bench 0</span>
+              <span>Tap ↻</span>
+            </div>
+          </div>
+
+        </div>
+  </div>
+
+  <section style="background:#F5EFDF;color:#14343C;padding:28px clamp(18px,3.5vw,30px);margin:34px 0 0;border:2px solid #E9A93C">
+    <h2 style="font-family:'Anton',Impact,sans-serif;font-weight:400;font-size:clamp(20px,3.4vw,28px);text-transform:uppercase;margin:0 0 16px;padding-bottom:10px;border-bottom:3px solid #14343C">⚖️ The Tribunal</h2>
+    <div style="display:grid;gap:14px">
+      <p style="font-size:16px;line-height:1.65;margin:0;text-wrap:pretty"><strong>Case 1 — The Herd Moves as One.</strong> Eight of ten managers handed Erling Haaland the armband — Mancs, Meh United, Jib Jib, Barco Polo, Moist Clams, abc, Puttingonmyjacquet and Byron's Team — and a goal against Sunderland returned 6, doubling to 12 apiece. The Tribunal notes that when eight managers wear the same armband, the verdict is decided everywhere else.</p>
+      <p style="font-size:16px;line-height:1.65;margin:0;text-wrap:pretty"><strong>Case 2 — The People vs. The Governor.</strong> Dalen Bunce (Haaland'sHaulers2.0) stands accused of the unthinkable: abandoning Haaland the one week Haaland scored. Cole Palmer's 2 points doubled to 4, an 8-point gap to the herd. The defendant offered no comment. The Tribunal considers this a proper captain's mare.</p>
+      <p style="font-size:16px;line-height:1.65;margin:0;text-wrap:pretty"><strong>Case 3 — Repeat Offender, Igor Thiago Division (Fifth Count, Acquitted).</strong> Andrew Bryce (TBs Turtles) returned to the dock for a fifth straight captaincy of Igor Thiago, and the court must record an unprecedented acquittal: 5 points, doubling to 10, inside a league-best 78. The Tribunal has no precedent for this and reserves judgment on a sixth.</p>
+      <p style="font-size:16px;line-height:1.65;margin:0;text-wrap:pretty"><strong>Exhibit A — The Casualty Ward.</strong> Submitted into evidence: the post-international-break injury list. Fantasy Football Hub's round-up (updated 7 October) flags Chelsea's João Pedro as a knee doubt, hamstring concerns at Arsenal over Tzolis and Havertz, Bournemouth's Alex Scott facing weeks out and Spurs' Pedro Porro out for several weeks. Haaland, for the record, appears fine — his early exit for Norway looks planned. The deadline bell tolls Saturday at 12:00 SAST; check your doubtful picks before the herd gets to them.</p>
+    </div>
+  </section>
+
+  <section style="background:#102A31;border:1px solid #1E3A42;padding:30px clamp(18px,3.5vw,30px);margin:22px 0 0">
+    <div style="font-family:'IBM Plex Mono',monospace;font-size:9.5px;letter-spacing:0.24em;text-transform:uppercase;color:#0B1E24;background:#E9A93C;display:inline-block;padding:4px 10px;margin-bottom:16px">The Data Desk</div>
+    <h2 style="font-family:'Anton',Impact,sans-serif;font-weight:400;font-size:clamp(20px,3.4vw,28px);text-transform:uppercase;margin:0 0 4px;color:#FFFFFF">📈 Rank Movement · GW4 → GW5</h2>
+    <p style="font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:0.06em;text-transform:uppercase;color:#7E9AA0;margin:0 0 18px">Left column: after GW4 · Right column: after GW5</p>
+    <div style="overflow-x:auto"><svg viewBox="0 0 520 358" style="width:100%;min-width:460px;height:auto;display:block" role="img" aria-label="Rank movement from Gameweek 4 to Gameweek 5">
+      <line x1="186" y1="10" x2="186" y2="348" stroke="#1E3A42" stroke-width="1"></line>
+      <line x1="334" y1="10" x2="334" y2="348" stroke="#1E3A42" stroke-width="1"></line>
+      <path d="M186,24 C 250,24 270,24 334,24" fill="none" stroke="#6E8A90" stroke-width="2"></path>
+      <path d="M186,58 C 250,58 270,92 334,92" fill="none" stroke="#F2705C" stroke-width="3"></path>
+      <path d="M186,92 C 250,92 270,126 334,126" fill="none" stroke="#F2705C" stroke-width="3"></path>
+      <path d="M186,126 C 250,126 270,160 334,160" fill="none" stroke="#F2705C" stroke-width="3"></path>
+      <path d="M186,160 C 250,160 270,58 334,58" fill="none" stroke="#5FD08A" stroke-width="3"></path>
+      <path d="M186,194 C 250,194 270,194 334,194" fill="none" stroke="#6E8A90" stroke-width="2"></path>
+      <path d="M186,228 C 250,228 270,262 334,262" fill="none" stroke="#F2705C" stroke-width="3"></path>
+      <path d="M186,262 C 250,262 270,330 334,330" fill="none" stroke="#F2705C" stroke-width="3"></path>
+      <path d="M186,296 C 250,296 270,296 334,296" fill="none" stroke="#6E8A90" stroke-width="2"></path>
+      <path d="M186,330 C 250,330 270,228 334,228" fill="none" stroke="#5FD08A" stroke-width="3"></path>
+      <g fill="#F2705C"><circle cx="186" cy="58" r="4.5"></circle><circle cx="334" cy="92" r="4.5"></circle><circle cx="186" cy="92" r="4.5"></circle><circle cx="334" cy="126" r="4.5"></circle><circle cx="186" cy="126" r="4.5"></circle><circle cx="334" cy="160" r="4.5"></circle><circle cx="186" cy="228" r="4.5"></circle><circle cx="334" cy="262" r="4.5"></circle><circle cx="186" cy="262" r="4.5"></circle><circle cx="334" cy="330" r="4.5"></circle></g>
+      <g fill="#5FD08A"><circle cx="186" cy="160" r="4.5"></circle><circle cx="334" cy="58" r="4.5"></circle><circle cx="186" cy="330" r="4.5"></circle><circle cx="334" cy="228" r="4.5"></circle></g>
+      <g fill="#6E8A90"><circle cx="186" cy="24" r="4.5"></circle><circle cx="334" cy="24" r="4.5"></circle><circle cx="186" cy="194" r="4.5"></circle><circle cx="334" cy="194" r="4.5"></circle><circle cx="186" cy="296" r="4.5"></circle><circle cx="334" cy="296" r="4.5"></circle></g>
+      <g font-family="IBM Plex Mono, monospace" font-size="12" fill="#6E8A90">
+        <text x="14" y="28.5">1</text><text x="14" y="62.5">2</text><text x="14" y="96.5">3</text><text x="14" y="130.5">4</text><text x="14" y="164.5">5</text><text x="14" y="198.5">6</text><text x="14" y="232.5">7</text><text x="14" y="266.5">8</text><text x="14" y="300.5">9</text><text x="14" y="334.5">10</text>
+        <text x="344" y="28.5">1</text><text x="344" y="62.5">2</text><text x="344" y="96.5">3</text><text x="344" y="130.5">4</text><text x="344" y="164.5">5</text><text x="344" y="198.5">6</text><text x="344" y="232.5">7</text><text x="344" y="266.5">8</text><text x="344" y="300.5">9</text><text x="344" y="334.5">10</text>
+      </g>
+      <g font-family="Archivo, sans-serif" font-weight="600" font-size="13" fill="#EAF2F0" text-anchor="end">
+        <text x="176" y="28.5">Mancs</text><text x="176" y="62.5">Jib Jib</text><text x="176" y="96.5">Barco Polo</text><text x="176" y="130.5">Moist Clams</text><text x="176" y="164.5">Meh United</text><text x="176" y="198.5">Haaland'sHaulers2.0</text><text x="176" y="232.5">abc</text><text x="176" y="266.5">Byron's Team</text><text x="176" y="300.5">Puttingonmyjacquet</text><text x="176" y="334.5">TBs Turtles</text>
+      </g>
+      <g font-family="Archivo, sans-serif" font-weight="600" font-size="13" fill="#EAF2F0">
+        <text x="368" y="28.5">Mancs</text><text x="368" y="62.5">Meh United</text><text x="368" y="96.5">Jib Jib</text><text x="368" y="130.5">Barco Polo</text><text x="368" y="164.5">Moist Clams</text><text x="368" y="198.5">Haaland'sHaulers2.0</text><text x="368" y="232.5">TBs Turtles</text><text x="368" y="266.5">abc</text><text x="368" y="300.5">Puttingonmyjacquet</text><text x="368" y="334.5">Byron's Team</text>
+      </g>
+    </svg></div>
+    <div style="height:1px;background:#1E3A42;margin:26px 0"></div>
+    <h2 style="font-family:'Anton',Impact,sans-serif;font-weight:400;font-size:clamp(20px,3.4vw,28px);text-transform:uppercase;margin:0 0 4px;color:#FFFFFF">🏖️ Season Captain Accrual · Through GW5</h2>
+    <p style="font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:0.06em;text-transform:uppercase;color:#7E9AA0;margin:0 0 18px">Every player the league has captained — total points they have delivered to armbands, all managers, all gameweeks</p>
+    <div style="display:grid;gap:14px">
+      <div style="display:grid;grid-template-columns:minmax(0,1fr) auto;gap:4px 14px;align-items:baseline">
+        <span style="font-family:'Archivo',sans-serif;font-weight:700;font-size:15px;color:#EAF2F0">Erling Haaland <span style="font-family:'IBM Plex Mono',monospace;font-weight:500;font-size:11px;color:#7E9AA0">26 armbands · avg 15.6</span></span>
+        <span style="font-family:'IBM Plex Mono',monospace;font-size:17px;font-weight:600;color:#E9A93C;font-variant-numeric:tabular-nums">406</span>
+        <div style="grid-column:1 / -1;height:9px;background:#0B1E24"><div style="height:100%;width:100%;background:#E9A93C"></div></div>
+        <span style="grid-column:1 / -1;font-family:'IBM Plex Mono',monospace;font-size:10.5px;letter-spacing:0.04em;color:#7E9AA0">GW1 16 (4 armbands) · GW2 78 (3 armbands) · GW3 162 (8 armbands, two tripled) · GW4 54 (3 armbands) · GW5 96 (8 armbands)</span>
+      </div>
+      <div style="display:grid;grid-template-columns:minmax(0,1fr) auto;gap:4px 14px;align-items:baseline">
+        <span style="font-family:'Archivo',sans-serif;font-weight:700;font-size:15px;color:#EAF2F0">Bruno Fernandes <span style="font-family:'IBM Plex Mono',monospace;font-weight:500;font-size:11px;color:#7E9AA0">5 armbands · avg 29.2</span></span>
+        <span style="font-family:'IBM Plex Mono',monospace;font-size:17px;font-weight:600;color:#E9A93C;font-variant-numeric:tabular-nums">146</span>
+        <div style="grid-column:1 / -1;height:9px;background:#0B1E24"><div style="height:100%;width:36%;background:#E9A93C"></div></div>
+        <span style="grid-column:1 / -1;font-family:'IBM Plex Mono',monospace;font-size:10.5px;letter-spacing:0.04em;color:#7E9AA0">GW1 8 (2 armbands) · GW2 138 (3 armbands) · not captained since</span>
+      </div>
+      <div style="display:grid;grid-template-columns:minmax(0,1fr) auto;gap:4px 14px;align-items:baseline">
+        <span style="font-family:'Archivo',sans-serif;font-weight:700;font-size:15px;color:#EAF2F0">Cole Palmer <span style="font-family:'IBM Plex Mono',monospace;font-weight:500;font-size:11px;color:#7E9AA0">7 armbands · avg 11.4</span></span>
+        <span style="font-family:'IBM Plex Mono',monospace;font-size:17px;font-weight:600;color:#37A0B8;font-variant-numeric:tabular-nums">80</span>
+        <div style="grid-column:1 / -1;height:9px;background:#0B1E24"><div style="height:100%;width:20%;background:#37A0B8"></div></div>
+        <span style="grid-column:1 / -1;font-family:'IBM Plex Mono',monospace;font-size:10.5px;letter-spacing:0.04em;color:#7E9AA0">GW1 26 (1 armband) · not captained GW2–GW3 · GW4 50 (5 armbands) · GW5 4 (1 armband)</span>
+      </div>
+      <div style="display:grid;grid-template-columns:minmax(0,1fr) auto;gap:4px 14px;align-items:baseline">
+        <span style="font-family:'Archivo',sans-serif;font-weight:700;font-size:15px;color:#EAF2F0">Igor Thiago <span style="font-family:'IBM Plex Mono',monospace;font-weight:500;font-size:11px;color:#7E9AA0">7 armbands · avg 3.4</span></span>
+        <span style="font-family:'IBM Plex Mono',monospace;font-size:17px;font-weight:600;color:#F2705C;font-variant-numeric:tabular-nums">24</span>
+        <div style="grid-column:1 / -1;height:9px;background:#0B1E24"><div style="height:100%;width:6%;background:#F2705C"></div></div>
+        <span style="grid-column:1 / -1;font-family:'IBM Plex Mono',monospace;font-size:10.5px;letter-spacing:0.04em;color:#7E9AA0">GW1 0 (2 armbands) · GW2 8 (2 armbands) · GW3 4 (1 armband) · GW4 2 (1 armband) · GW5 10 (1 armband)</span>
+      </div>
+      <div style="display:grid;grid-template-columns:minmax(0,1fr) auto;gap:4px 14px;align-items:baseline">
+        <span style="font-family:'Archivo',sans-serif;font-weight:700;font-size:15px;color:#EAF2F0">Dominik Szoboszlai <span style="font-family:'IBM Plex Mono',monospace;font-weight:500;font-size:11px;color:#7E9AA0">3 armbands · avg 6.7</span></span>
+        <span style="font-family:'IBM Plex Mono',monospace;font-size:17px;font-weight:600;color:#F2705C;font-variant-numeric:tabular-nums">20</span>
+        <div style="grid-column:1 / -1;height:9px;background:#0B1E24"><div style="height:100%;width:5%;background:#F2705C"></div></div>
+        <span style="grid-column:1 / -1;font-family:'IBM Plex Mono',monospace;font-size:10.5px;letter-spacing:0.04em;color:#7E9AA0">GW2 8 (1 armband) · GW3 6 (1 armband) · GW4 6 (1 armband) · not captained in GW5</span>
+      </div>
+      <div style="display:grid;grid-template-columns:minmax(0,1fr) auto;gap:4px 14px;align-items:baseline">
+        <span style="font-family:'Archivo',sans-serif;font-weight:700;font-size:15px;color:#EAF2F0">Alexander Isak <span style="font-family:'IBM Plex Mono',monospace;font-weight:500;font-size:11px;color:#7E9AA0">2 armbands · avg 10.0</span></span>
+        <span style="font-family:'IBM Plex Mono',monospace;font-size:17px;font-weight:600;color:#37A0B8;font-variant-numeric:tabular-nums">20</span>
+        <div style="grid-column:1 / -1;height:9px;background:#0B1E24"><div style="height:100%;width:5%;background:#37A0B8"></div></div>
+        <span style="grid-column:1 / -1;font-family:'IBM Plex Mono',monospace;font-size:10.5px;letter-spacing:0.04em;color:#7E9AA0">GW1 4 (1 armband) · GW2 16 (1 armband) · not captained since</span>
+      </div>
+    </div>
+  </section>
+
+  <section style="background:#F5EFDF;color:#14343C;padding:28px clamp(18px,3.5vw,30px);margin:22px 0 0;border:2px solid #E9A93C">
+    <h2 style="font-family:'Anton',Impact,sans-serif;font-weight:400;font-size:clamp(20px,3.4vw,28px);text-transform:uppercase;margin:0 0 16px;padding-bottom:10px;border-bottom:3px solid #14343C">🔥 GW5 Talking Points</h2>
+    <ul style="margin:0;padding:0;list-style:none;display:grid;gap:13px">
+      <li style="display:grid;grid-template-columns:24px minmax(0,1fr);gap:10px;font-size:16px;line-height:1.6"><span style="font-family:'IBM Plex Mono',monospace;font-size:11px;color:#A3271F;padding-top:4px">01</span><span>Eight of ten armbands went to Erling Haaland — Mancs, Meh United, Jib Jib, Barco Polo, Moist Clams, abc, Puttingonmyjacquet and Byron's Team — and a goal against Sunderland returned 6, doubling to 12 for every one of them</span></li>
+      <li style="display:grid;grid-template-columns:24px minmax(0,1fr);gap:10px;font-size:16px;line-height:1.6"><span style="font-family:'IBM Plex Mono',monospace;font-size:11px;color:#A3271F;padding-top:4px">02</span><span>Haaland'sHaulers2.0 were the lone Haaland-faithful to defect: Dalen Bunce gave the armband to Cole Palmer, who returned 2 points, doubling to just 4 — an 8-point gap to the herd</span></li>
+      <li style="display:grid;grid-template-columns:24px minmax(0,1fr);gap:10px;font-size:16px;line-height:1.6"><span style="font-family:'IBM Plex Mono',monospace;font-size:11px;color:#A3271F;padding-top:4px">03</span><span>TBs Turtles post the week's best score — 78, Andrew Bryce's highest of the season by 26 — as the fifth straight Igor Thiago armband finally pays (5, doubling to 10); up three places from last to 7th</span></li>
+      <li style="display:grid;grid-template-columns:24px minmax(0,1fr);gap:10px;font-size:16px;line-height:1.6"><span style="font-family:'IBM Plex Mono',monospace;font-size:11px;color:#A3271F;padding-top:4px">04</span><span>Meh United's 72 is the second-best score of the week and lifts Warren Eades from 5th to 2nd — and with 219 points across GW3 to GW5, he is September's Manager of the Month</span></li>
+      <li style="display:grid;grid-template-columns:24px minmax(0,1fr);gap:10px;font-size:16px;line-height:1.6"><span style="font-family:'IBM Plex Mono',monospace;font-size:11px;color:#A3271F;padding-top:4px">05</span><span>Mancs still lead on 388, but 41 points is Fraser McKenna's lowest week of the season, and the cushion over Meh United is down to 53</span></li>
+      <li style="display:grid;grid-template-columns:24px minmax(0,1fr);gap:10px;font-size:16px;line-height:1.6"><span style="font-family:'IBM Plex Mono',monospace;font-size:11px;color:#A3271F;padding-top:4px">06</span><span>Byron's Team score the week's lowest, 37, with Haaland's armband and not a single point left on the bench — a two-place fall straight into last place</span></li>
+      <li style="display:grid;grid-template-columns:24px minmax(0,1fr);gap:10px;font-size:16px;line-height:1.6"><span style="font-family:'IBM Plex Mono',monospace;font-size:11px;color:#A3271F;padding-top:4px">07</span><span>72 points were left on the benches across the league — 17 from Jib Jib, 14 each from Mancs and Barco Polo, against just 1 from Moist Clams and none from Byron's Team</span></li>
+      <li style="display:grid;grid-template-columns:24px minmax(0,1fr);gap:10px;font-size:16px;line-height:1.6"><span style="font-family:'IBM Plex Mono',monospace;font-size:11px;color:#A3271F;padding-top:4px">08</span><span>Only Meh United, TBs Turtles and Puttingonmyjacquet beat the FPL-wide average of 48 — Barco Polo matched it exactly — and the league's own average was 51.3</span></li>
+      <li style="display:grid;grid-template-columns:24px minmax(0,1fr);gap:10px;font-size:16px;line-height:1.6"><span style="font-family:'IBM Plex Mono',monospace;font-size:11px;color:#A3271F;padding-top:4px">09</span><span>🃏 No chips played in GW5. Nine chips have been used across the season through GW5, and six managers are still sitting on a full arsenal</span></li>
+    </ul>
+  </section>
+
+  <section style="background:linear-gradient(150deg,#E9A93C 0%,#D08C24 100%);color:#0B1E24;padding:28px clamp(18px,3.5vw,30px);margin:22px 0 0">
+    <h2 style="font-family:'Anton',Impact,sans-serif;font-weight:400;font-size:clamp(20px,3.4vw,28px);text-transform:uppercase;margin:0 0 8px;line-height:1.1">🏅 Manager of the Month — September</h2>
+    <div style="height:3px;width:70px;background:#0B1E24;margin:0 0 16px"></div>
+    <p style="font-size:16.5px;line-height:1.65;margin:0 0 10px;text-wrap:pretty">September is closed: three finished gameweeks — GW3, GW4 and GW5 — and one survivor standing.</p>
+    <p style="font-size:16.5px;line-height:1.65;margin:0;text-wrap:pretty"><span style="font-family:'IBM Plex Mono',monospace;font-weight:600">Warren Eades (Meh United)</span> takes it with <span style="font-family:'IBM Plex Mono',monospace;font-weight:600">219 points</span> combined — 58, then 89, then a second-best-of-the-week <span style="font-family:'IBM Plex Mono',monospace;font-weight:600">72</span> in GW5. Fraser McKenna's Mancs finish second on <span style="font-family:'IBM Plex Mono',monospace;font-weight:600">200</span>, with jib lurie's Jib Jib third on <span style="font-family:'IBM Plex Mono',monospace;font-weight:600">182</span>. October's race opens with GW6, the first gameweek back after the international break.</p>
+  </section>
+
+  <h2 style="font-family:'Anton',Impact,sans-serif;font-weight:400;font-size:clamp(20px,3.4vw,28px);text-transform:uppercase;margin:38px 0 0;padding-bottom:10px;border-bottom:2px solid #E9A93C;color:#FFFFFF">📊 Season Ledger — The Stat Back</h2>
+  <p style="font-size:16.5px;line-height:1.65;margin:14px 0 18px;color:#C7D8DA;text-wrap:pretty">The running tally the Gazette keeps all season — updated every gameweek, now through GW5.</p>
+
+  <div class="stat-grid-3" style="display:grid;gap:1px;background:#1E3A42;border:1px solid #1E3A42;margin-bottom:22px">
+    <div style="background:#102A31;padding:14px 16px">
+      <div style="font-family:'IBM Plex Mono',monospace;font-size:10px;letter-spacing:0.1em;text-transform:uppercase;color:#7E9AA0;margin-bottom:7px">👑 Team of the Week · GW5</div>
+      <div style="font-family:'Anton',Impact,sans-serif;font-size:19px;line-height:1.15;text-transform:uppercase;color:#FFFFFF">TBs Turtles · 78</div>
+      <div style="font-size:12.5px;color:#7E9AA0;margin-top:3px;font-style:italic">Andrew Bryce, GW5</div>
+    </div>
+    <div style="background:#102A31;padding:14px 16px">
+      <div style="font-family:'IBM Plex Mono',monospace;font-size:10px;letter-spacing:0.1em;text-transform:uppercase;color:#7E9AA0;margin-bottom:7px">🥴 Wooden Spoon · GW5</div>
+      <div style="font-family:'Anton',Impact,sans-serif;font-size:19px;line-height:1.15;text-transform:uppercase;color:#FFFFFF">Byron's Team · 37</div>
+      <div style="font-size:12.5px;color:#7E9AA0;margin-top:3px;font-style:italic">Byron Cowan, GW5</div>
+    </div>
+    <div style="background:#102A31;padding:14px 16px">
+      <div style="font-family:'IBM Plex Mono',monospace;font-size:10px;letter-spacing:0.1em;text-transform:uppercase;color:#7E9AA0;margin-bottom:7px">📈 Biggest Riser</div>
+      <div style="font-family:'Anton',Impact,sans-serif;font-size:19px;line-height:1.15;text-transform:uppercase;color:#5FD08A">Meh United &amp; TBs Turtles · ▲3</div>
+      <div style="font-size:12.5px;color:#7E9AA0;margin-top:3px;font-style:italic">Warren Eades, 5th → 2nd · Andrew Bryce, 10th → 7th</div>
+    </div>
+    <div style="background:#102A31;padding:14px 16px">
+      <div style="font-family:'IBM Plex Mono',monospace;font-size:10px;letter-spacing:0.1em;text-transform:uppercase;color:#7E9AA0;margin-bottom:7px">📉 Biggest Faller</div>
+      <div style="font-family:'Anton',Impact,sans-serif;font-size:19px;line-height:1.15;text-transform:uppercase;color:#F2705C">Byron's Team · ▼2</div>
+      <div style="font-size:12.5px;color:#7E9AA0;margin-top:3px;font-style:italic">Byron Cowan, 8th → 10th</div>
+    </div>
+    <div style="background:#102A31;padding:14px 16px">
+      <div style="font-family:'IBM Plex Mono',monospace;font-size:10px;letter-spacing:0.1em;text-transform:uppercase;color:#7E9AA0;margin-bottom:7px">🃏 Chips Used (Season)</div>
+      <div style="font-family:'Anton',Impact,sans-serif;font-size:19px;line-height:1.15;text-transform:uppercase;color:#FFFFFF">9 chips</div>
+      <div style="font-size:12.5px;color:#7E9AA0;margin-top:3px;font-style:italic">None played in GW5 · 3 Bench Boost · 2 Triple Captain · 3 Wildcard · 1 Free Hit</div>
+    </div>
+    <div style="background:#102A31;padding:14px 16px">
+      <div style="font-family:'IBM Plex Mono',monospace;font-size:10px;letter-spacing:0.1em;text-transform:uppercase;color:#7E9AA0;margin-bottom:7px">🎖️ Most Captained (Season)</div>
+      <div style="font-family:'Anton',Impact,sans-serif;font-size:19px;line-height:1.15;text-transform:uppercase;color:#FFFFFF">Erling Haaland</div>
+      <div style="font-size:12.5px;color:#7E9AA0;margin-top:3px;font-style:italic">26 of 50 picks across 5 gameweeks · 8 of 10 in GW5</div>
+    </div>
+    <div style="background:#102A31;padding:14px 16px">
+      <div style="font-family:'IBM Plex Mono',monospace;font-size:10px;letter-spacing:0.1em;text-transform:uppercase;color:#7E9AA0;margin-bottom:7px">🪑 Biggest Bench Waste</div>
+      <div style="font-family:'Anton',Impact,sans-serif;font-size:19px;line-height:1.15;text-transform:uppercase;color:#FFFFFF">Moist Clams · 25 pts</div>
+      <div style="font-size:12.5px;color:#7E9AA0;margin-top:3px;font-style:italic">Declan Braithwaite, GW1 · GW5's worst: Jib Jib, 17</div>
+    </div>
+    <div style="background:#102A31;padding:14px 16px">
+      <div style="font-family:'IBM Plex Mono',monospace;font-size:10px;letter-spacing:0.1em;text-transform:uppercase;color:#7E9AA0;margin-bottom:7px">📏 League Spread</div>
+      <div style="font-family:'Anton',Impact,sans-serif;font-size:19px;line-height:1.15;text-transform:uppercase;color:#FFFFFF">126 pts</div>
+      <div style="font-size:12.5px;color:#7E9AA0;margin-top:3px;font-style:italic">top (388) to bottom (262)</div>
+    </div>
+    <div style="background:#102A31;padding:14px 16px">
+      <div style="font-family:'IBM Plex Mono',monospace;font-size:10px;letter-spacing:0.1em;text-transform:uppercase;color:#7E9AA0;margin-bottom:7px">🎒 Full Arsenal (Season)</div>
+      <div style="font-family:'Anton',Impact,sans-serif;font-size:19px;line-height:1.15;text-transform:uppercase;color:#FFFFFF">6 of 10 teams</div>
+      <div style="font-size:12.5px;color:#7E9AA0;margin-top:3px;font-style:italic">Jib Jib, Haaland'sHaulers2.0, abc, Byron's Team, Puttingonmyjacquet &amp; TBs Turtles — no chips played yet through GW5</div>
+    </div>
+  </div>
+
+  <div style="overflow-x:auto;background:#102A31;border:1px solid #1E3A42;border-top:4px solid #E9A93C;padding:6px clamp(10px,2vw,18px) 10px">
+    <table style="width:100%;border-collapse:collapse;font-size:13.5px;min-width:640px">
+      <thead>
+        <tr>
+          <th style="text-align:left;padding:11px 10px;font-family:'IBM Plex Mono',monospace;font-size:10px;letter-spacing:0.08em;text-transform:uppercase;font-weight:600;color:#7E9AA0;border-bottom:1px solid #1E3A42">Team</th>
+          <th style="text-align:right;padding:11px 10px;font-family:'IBM Plex Mono',monospace;font-size:10px;letter-spacing:0.08em;text-transform:uppercase;font-weight:600;color:#7E9AA0;border-bottom:1px solid #1E3A42">GW5</th>
+          <th style="text-align:right;padding:11px 10px;font-family:'IBM Plex Mono',monospace;font-size:10px;letter-spacing:0.08em;text-transform:uppercase;font-weight:600;color:#7E9AA0;border-bottom:1px solid #1E3A42">Total</th>
+          <th style="text-align:right;padding:11px 10px;font-family:'IBM Plex Mono',monospace;font-size:10px;letter-spacing:0.08em;text-transform:uppercase;font-weight:600;color:#7E9AA0;border-bottom:1px solid #1E3A42">Rank</th>
+          <th style="text-align:right;padding:11px 10px;font-family:'IBM Plex Mono',monospace;font-size:10px;letter-spacing:0.08em;text-transform:uppercase;font-weight:600;color:#7E9AA0;border-bottom:1px solid #1E3A42">Δ</th>
+          <th style="text-align:right;padding:11px 10px;font-family:'IBM Plex Mono',monospace;font-size:10px;letter-spacing:0.08em;text-transform:uppercase;font-weight:600;color:#7E9AA0;border-bottom:1px solid #1E3A42">Chip</th>
+          <th style="text-align:left;padding:11px 10px;font-family:'IBM Plex Mono',monospace;font-size:10px;letter-spacing:0.08em;text-transform:uppercase;font-weight:600;color:#7E9AA0;border-bottom:1px solid #1E3A42">Captain</th>
+          <th style="text-align:right;padding:11px 10px;font-family:'IBM Plex Mono',monospace;font-size:10px;letter-spacing:0.08em;text-transform:uppercase;font-weight:600;color:#7E9AA0;border-bottom:1px solid #1E3A42">Cap Pts</th>
+          <th style="text-align:right;padding:11px 10px;font-family:'IBM Plex Mono',monospace;font-size:10px;letter-spacing:0.08em;text-transform:uppercase;font-weight:600;color:#7E9AA0;border-bottom:1px solid #1E3A42">Bench</th>
+        </tr>
+      </thead>
+      <tbody style="font-family:'IBM Plex Mono',monospace;font-variant-numeric:tabular-nums;color:#EAF2F0">
+        <tr>
+          <td style="text-align:left;padding:10px;font-family:'Archivo',sans-serif;font-weight:700;color:#FFFFFF;border-bottom:1px solid #1B3138;white-space:nowrap">Mancs</td>
+          <td style="text-align:right;padding:10px;border-bottom:1px solid #1B3138">41</td><td style="text-align:right;padding:10px;border-bottom:1px solid #1B3138;font-weight:600">388</td><td style="text-align:right;padding:10px;border-bottom:1px solid #1B3138">1</td><td style="text-align:right;padding:10px;border-bottom:1px solid #1B3138;color:#7E9AA0">—</td><td style="text-align:right;padding:10px;border-bottom:1px solid #1B3138;color:#7E9AA0">—</td>
+          <td style="text-align:left;padding:10px;font-family:'Source Serif 4',Georgia,serif;border-bottom:1px solid #1B3138;white-space:nowrap">Erling Haaland</td>
+          <td style="text-align:right;padding:10px;border-bottom:1px solid #1B3138">12</td><td style="text-align:right;padding:10px;border-bottom:1px solid #1B3138;color:#7E9AA0">14</td>
+        </tr>
+        <tr style="background:#0D242B">
+          <td style="text-align:left;padding:10px;font-family:'Archivo',sans-serif;font-weight:700;color:#FFFFFF;border-bottom:1px solid #1B3138;white-space:nowrap">Meh United</td>
+          <td style="text-align:right;padding:10px;border-bottom:1px solid #1B3138">72</td><td style="text-align:right;padding:10px;border-bottom:1px solid #1B3138;font-weight:600">335</td><td style="text-align:right;padding:10px;border-bottom:1px solid #1B3138">2</td><td style="text-align:right;padding:10px;border-bottom:1px solid #1B3138;color:#5FD08A">▲3</td><td style="text-align:right;padding:10px;border-bottom:1px solid #1B3138;color:#7E9AA0">—</td>
+          <td style="text-align:left;padding:10px;font-family:'Source Serif 4',Georgia,serif;border-bottom:1px solid #1B3138;white-space:nowrap">Erling Haaland</td>
+          <td style="text-align:right;padding:10px;border-bottom:1px solid #1B3138">12</td><td style="text-align:right;padding:10px;border-bottom:1px solid #1B3138;color:#7E9AA0">10</td>
+        </tr>
+        <tr>
+          <td style="text-align:left;padding:10px;font-family:'Archivo',sans-serif;font-weight:700;color:#FFFFFF;border-bottom:1px solid #1B3138;white-space:nowrap">Jib Jib</td>
+          <td style="text-align:right;padding:10px;border-bottom:1px solid #1B3138">47</td><td style="text-align:right;padding:10px;border-bottom:1px solid #1B3138;font-weight:600">320</td><td style="text-align:right;padding:10px;border-bottom:1px solid #1B3138">3</td><td style="text-align:right;padding:10px;border-bottom:1px solid #1B3138;color:#F2705C">▼1</td><td style="text-align:right;padding:10px;border-bottom:1px solid #1B3138;color:#7E9AA0">—</td>
+          <td style="text-align:left;padding:10px;font-family:'Source Serif 4',Georgia,serif;border-bottom:1px solid #1B3138;white-space:nowrap">Erling Haaland</td>
+          <td style="text-align:right;padding:10px;border-bottom:1px solid #1B3138">12</td><td style="text-align:right;padding:10px;border-bottom:1px solid #1B3138;color:#7E9AA0">17</td>
+        </tr>
+        <tr style="background:#0D242B">
+          <td style="text-align:left;padding:10px;font-family:'Archivo',sans-serif;font-weight:700;color:#FFFFFF;border-bottom:1px solid #1B3138;white-space:nowrap">Barco Polo</td>
+          <td style="text-align:right;padding:10px;border-bottom:1px solid #1B3138">48</td><td style="text-align:right;padding:10px;border-bottom:1px solid #1B3138;font-weight:600">319</td><td style="text-align:right;padding:10px;border-bottom:1px solid #1B3138">4</td><td style="text-align:right;padding:10px;border-bottom:1px solid #1B3138;color:#F2705C">▼1</td><td style="text-align:right;padding:10px;border-bottom:1px solid #1B3138;color:#7E9AA0">—</td>
+          <td style="text-align:left;padding:10px;font-family:'Source Serif 4',Georgia,serif;border-bottom:1px solid #1B3138;white-space:nowrap">Erling Haaland</td>
+          <td style="text-align:right;padding:10px;border-bottom:1px solid #1B3138">12</td><td style="text-align:right;padding:10px;border-bottom:1px solid #1B3138;color:#7E9AA0">14</td>
+        </tr>
+        <tr>
+          <td style="text-align:left;padding:10px;font-family:'Archivo',sans-serif;font-weight:700;color:#FFFFFF;border-bottom:1px solid #1B3138;white-space:nowrap">Moist Clams</td>
+          <td style="text-align:right;padding:10px;border-bottom:1px solid #1B3138">46</td><td style="text-align:right;padding:10px;border-bottom:1px solid #1B3138;font-weight:600">311</td><td style="text-align:right;padding:10px;border-bottom:1px solid #1B3138">5</td><td style="text-align:right;padding:10px;border-bottom:1px solid #1B3138;color:#F2705C">▼1</td><td style="text-align:right;padding:10px;border-bottom:1px solid #1B3138;color:#7E9AA0">—</td>
+          <td style="text-align:left;padding:10px;font-family:'Source Serif 4',Georgia,serif;border-bottom:1px solid #1B3138;white-space:nowrap">Erling Haaland</td>
+          <td style="text-align:right;padding:10px;border-bottom:1px solid #1B3138">12</td><td style="text-align:right;padding:10px;border-bottom:1px solid #1B3138;color:#7E9AA0">1</td>
+        </tr>
+        <tr style="background:#0D242B">
+          <td style="text-align:left;padding:10px;font-family:'Archivo',sans-serif;font-weight:700;color:#FFFFFF;border-bottom:1px solid #1B3138;white-space:nowrap">Haaland'sHaulers2.0</td>
+          <td style="text-align:right;padding:10px;border-bottom:1px solid #1B3138">43</td><td style="text-align:right;padding:10px;border-bottom:1px solid #1B3138;font-weight:600">285</td><td style="text-align:right;padding:10px;border-bottom:1px solid #1B3138">6</td><td style="text-align:right;padding:10px;border-bottom:1px solid #1B3138;color:#7E9AA0">—</td><td style="text-align:right;padding:10px;border-bottom:1px solid #1B3138;color:#7E9AA0">—</td>
+          <td style="text-align:left;padding:10px;font-family:'Source Serif 4',Georgia,serif;border-bottom:1px solid #1B3138;white-space:nowrap">Cole Palmer</td>
+          <td style="text-align:right;padding:10px;border-bottom:1px solid #1B3138">4</td><td style="text-align:right;padding:10px;border-bottom:1px solid #1B3138;color:#7E9AA0">2</td>
+        </tr>
+        <tr>
+          <td style="text-align:left;padding:10px;font-family:'Archivo',sans-serif;font-weight:700;color:#FFFFFF;border-bottom:1px solid #1B3138;white-space:nowrap">TBs Turtles</td>
+          <td style="text-align:right;padding:10px;border-bottom:1px solid #1B3138">78</td><td style="text-align:right;padding:10px;border-bottom:1px solid #1B3138;font-weight:600">280</td><td style="text-align:right;padding:10px;border-bottom:1px solid #1B3138">7</td><td style="text-align:right;padding:10px;border-bottom:1px solid #1B3138;color:#5FD08A">▲3</td><td style="text-align:right;padding:10px;border-bottom:1px solid #1B3138;color:#7E9AA0">—</td>
+          <td style="text-align:left;padding:10px;font-family:'Source Serif 4',Georgia,serif;border-bottom:1px solid #1B3138;white-space:nowrap">Igor Thiago</td>
+          <td style="text-align:right;padding:10px;border-bottom:1px solid #1B3138">10</td><td style="text-align:right;padding:10px;border-bottom:1px solid #1B3138;color:#7E9AA0">2</td>
+        </tr>
+        <tr style="background:#0D242B">
+          <td style="text-align:left;padding:10px;font-family:'Archivo',sans-serif;font-weight:700;color:#FFFFFF;border-bottom:1px solid #1B3138;white-space:nowrap">abc</td>
+          <td style="text-align:right;padding:10px;border-bottom:1px solid #1B3138">45</td><td style="text-align:right;padding:10px;border-bottom:1px solid #1B3138;font-weight:600">280</td><td style="text-align:right;padding:10px;border-bottom:1px solid #1B3138">8</td><td style="text-align:right;padding:10px;border-bottom:1px solid #1B3138;color:#F2705C">▼1</td><td style="text-align:right;padding:10px;border-bottom:1px solid #1B3138;color:#7E9AA0">—</td>
+          <td style="text-align:left;padding:10px;font-family:'Source Serif 4',Georgia,serif;border-bottom:1px solid #1B3138;white-space:nowrap">Erling Haaland</td>
+          <td style="text-align:right;padding:10px;border-bottom:1px solid #1B3138">12</td><td style="text-align:right;padding:10px;border-bottom:1px solid #1B3138;color:#7E9AA0">3</td>
+        </tr>
+        <tr>
+          <td style="text-align:left;padding:10px;font-family:'Archivo',sans-serif;font-weight:700;color:#FFFFFF;border-bottom:1px solid #1B3138;white-space:nowrap">Puttingonmyjacquet</td>
+          <td style="text-align:right;padding:10px;border-bottom:1px solid #1B3138">56</td><td style="text-align:right;padding:10px;border-bottom:1px solid #1B3138;font-weight:600">277</td><td style="text-align:right;padding:10px;border-bottom:1px solid #1B3138">9</td><td style="text-align:right;padding:10px;border-bottom:1px solid #1B3138;color:#7E9AA0">—</td><td style="text-align:right;padding:10px;border-bottom:1px solid #1B3138;color:#7E9AA0">—</td>
+          <td style="text-align:left;padding:10px;font-family:'Source Serif 4',Georgia,serif;border-bottom:1px solid #1B3138;white-space:nowrap">Erling Haaland</td>
+          <td style="text-align:right;padding:10px;border-bottom:1px solid #1B3138">12</td><td style="text-align:right;padding:10px;border-bottom:1px solid #1B3138;color:#7E9AA0">9</td>
+        </tr>
+        <tr style="background:#0D242B">
+          <td style="text-align:left;padding:10px;font-family:'Archivo',sans-serif;font-weight:700;color:#FFFFFF;border-bottom:1px solid #1B3138;white-space:nowrap">Byron's Team</td>
+          <td style="text-align:right;padding:10px;border-bottom:1px solid #1B3138">37</td><td style="text-align:right;padding:10px;border-bottom:1px solid #1B3138;font-weight:600">262</td><td style="text-align:right;padding:10px;border-bottom:1px solid #1B3138">10</td><td style="text-align:right;padding:10px;border-bottom:1px solid #1B3138;color:#F2705C">▼2</td><td style="text-align:right;padding:10px;border-bottom:1px solid #1B3138;color:#7E9AA0">—</td>
+          <td style="text-align:left;padding:10px;font-family:'Source Serif 4',Georgia,serif;border-bottom:1px solid #1B3138;white-space:nowrap">Erling Haaland</td>
+          <td style="text-align:right;padding:10px;border-bottom:1px solid #1B3138">12</td><td style="text-align:right;padding:10px;border-bottom:1px solid #1B3138;color:#7E9AA0">0</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <section style="background:#F5EFDF;color:#14343C;padding:28px clamp(18px,3.5vw,30px);margin:22px 0 0">
+    <h2 style="font-family:'Anton',Impact,sans-serif;font-weight:400;font-size:clamp(20px,3.4vw,28px);text-transform:uppercase;margin:0;padding-bottom:10px;border-bottom:3px solid #14343C">⚽ Narrative Watch After GW5</h2>
+    <div style="font-style:italic;font-size:17px;line-height:1.95;margin:16px 0 0;text-wrap:pretty">
+      <p style="margin:0">Fraser's Rick still holds the safe zone, though the hatchet is looking chipped.<br>
+      Warren's Daryl rides in from the wilderness, up to 2nd.<br>
+      jib lurie's Michonne slips to 3rd, katana still sheathed.<br>
+      Brent's Carol drops to 4th, keeping calm and keeping the knife close.<br>
+      Declan's Maggie sits in 5th, the farm spotless but the harvest thin.<br>
+      Dalen's Governor holds 6th, though his people are asking questions.<br>
+      Andrew's Negan swings up to 7th, Lucille back in business.<br>
+      David's Eugene falls to 8th, the plan was perfect, mostly.<br>
+      Luke's Morgan stays put in 9th, the staff steady.<br>
+      Byron's Walker shuffles into last place, finally bitten.<br>
+      Gameweek 6 awaits.</p>
+      <p style="margin:22px 0 0;font-family:'Anton',Impact,sans-serif;font-style:normal;font-size:clamp(18px,3vw,24px);line-height:1.35;text-transform:uppercase;color:#A3271F">The herd moved as one behind Haaland, the post-break casualty ward is overflowing, and Andrew's Negan finally got his swing back. 🧟</p>
+    </div>
+  </section>
+
+  <section style="background:#102A31;border:1px solid #1E3A42;border-top:4px solid #E9A93C;padding:28px clamp(18px,3.5vw,30px);margin:22px 0 0">
+    <h2 style="font-family:'Anton',Impact,sans-serif;font-weight:400;font-size:clamp(20px,3.4vw,28px);text-transform:uppercase;margin:0 0 8px;color:#FFFFFF">📅 Coming Up: Gameweek 6</h2>
+    <div style="height:3px;width:70px;background:#E9A93C;margin:0 0 14px"></div>
+    <p style="font-size:16.5px;line-height:1.65;margin:0 0 16px;color:#C7D8DA;text-wrap:pretty">Ten fixtures after the international break — the deadline is Saturday 10 October at 12:00 SAST. Check the injury list before you lock anything in.</p>
+    <ul style="list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(auto-fit,minmax(320px,1fr));gap:0 28px">
+      <li style="display:flex;justify-content:space-between;align-items:baseline;gap:14px;padding:9px 0;border-bottom:1px solid #1B3138"><span style="font-family:'Source Serif 4',Georgia,serif;font-size:15.5px;font-weight:600;color:#EAF2F0">Arsenal <span style="color:#5E7C82;font-weight:400">v</span> Leeds</span><span style="font-family:'IBM Plex Mono',monospace;font-size:12px;color:#8AA6AC;white-space:nowrap">Sat 10 Oct, 13:30</span></li>
+      <li style="display:flex;justify-content:space-between;align-items:baseline;gap:14px;padding:9px 0;border-bottom:1px solid #1B3138"><span style="font-family:'Source Serif 4',Georgia,serif;font-size:15.5px;font-weight:600;color:#EAF2F0">Aston Villa <span style="color:#5E7C82;font-weight:400">v</span> Brentford</span><span style="font-family:'IBM Plex Mono',monospace;font-size:12px;color:#8AA6AC;white-space:nowrap">Sat 10 Oct, 16:00</span></li>
+      <li style="display:flex;justify-content:space-between;align-items:baseline;gap:14px;padding:9px 0;border-bottom:1px solid #1B3138"><span style="font-family:'Source Serif 4',Georgia,serif;font-size:15.5px;font-weight:600;color:#EAF2F0">Chelsea <span style="color:#5E7C82;font-weight:400">v</span> Bournemouth</span><span style="font-family:'IBM Plex Mono',monospace;font-size:12px;color:#8AA6AC;white-space:nowrap">Sat 10 Oct, 16:00</span></li>
+      <li style="display:flex;justify-content:space-between;align-items:baseline;gap:14px;padding:9px 0;border-bottom:1px solid #1B3138"><span style="font-family:'Source Serif 4',Georgia,serif;font-size:15.5px;font-weight:600;color:#EAF2F0">Ipswich Town <span style="color:#5E7C82;font-weight:400">v</span> Fulham</span><span style="font-family:'IBM Plex Mono',monospace;font-size:12px;color:#8AA6AC;white-space:nowrap">Sat 10 Oct, 16:00</span></li>
+      <li style="display:flex;justify-content:space-between;align-items:baseline;gap:14px;padding:9px 0;border-bottom:1px solid #1B3138"><span style="font-family:'Source Serif 4',Georgia,serif;font-size:15.5px;font-weight:600;color:#EAF2F0">Sunderland <span style="color:#5E7C82;font-weight:400">v</span> Brighton</span><span style="font-family:'IBM Plex Mono',monospace;font-size:12px;color:#8AA6AC;white-space:nowrap">Sat 10 Oct, 16:00</span></li>
+      <li style="display:flex;justify-content:space-between;align-items:baseline;gap:14px;padding:9px 0;border-bottom:1px solid #1B3138"><span style="font-family:'Source Serif 4',Georgia,serif;font-size:15.5px;font-weight:600;color:#EAF2F0">Man Utd <span style="color:#5E7C82;font-weight:400">v</span> Spurs</span><span style="font-family:'IBM Plex Mono',monospace;font-size:12px;color:#8AA6AC;white-space:nowrap">Sat 10 Oct, 18:30</span></li>
+      <li style="display:flex;justify-content:space-between;align-items:baseline;gap:14px;padding:9px 0;border-bottom:1px solid #1B3138"><span style="font-family:'Source Serif 4',Georgia,serif;font-size:15.5px;font-weight:600;color:#EAF2F0">Crystal Palace <span style="color:#5E7C82;font-weight:400">v</span> Nott'm Forest</span><span style="font-family:'IBM Plex Mono',monospace;font-size:12px;color:#8AA6AC;white-space:nowrap">Sun 11 Oct, 15:00</span></li>
+      <li style="display:flex;justify-content:space-between;align-items:baseline;gap:14px;padding:9px 0;border-bottom:1px solid #1B3138"><span style="font-family:'Source Serif 4',Georgia,serif;font-size:15.5px;font-weight:600;color:#EAF2F0">Hull City <span style="color:#5E7C82;font-weight:400">v</span> Everton</span><span style="font-family:'IBM Plex Mono',monospace;font-size:12px;color:#8AA6AC;white-space:nowrap">Sun 11 Oct, 15:00</span></li>
+      <li style="display:flex;justify-content:space-between;align-items:baseline;gap:14px;padding:9px 0;border-bottom:1px solid #1B3138"><span style="font-family:'Source Serif 4',Georgia,serif;font-size:15.5px;font-weight:600;color:#EAF2F0">Liverpool <span style="color:#5E7C82;font-weight:400">v</span> Man City</span><span style="font-family:'IBM Plex Mono',monospace;font-size:12px;color:#8AA6AC;white-space:nowrap">Sun 11 Oct, 17:30</span></li>
+      <li style="display:flex;justify-content:space-between;align-items:baseline;gap:14px;padding:9px 0;border-bottom:1px solid #1B3138"><span style="font-family:'Source Serif 4',Georgia,serif;font-size:15.5px;font-weight:600;color:#EAF2F0">Coventry City <span style="color:#5E7C82;font-weight:400">v</span> Newcastle</span><span style="font-family:'IBM Plex Mono',monospace;font-size:12px;color:#8AA6AC;white-space:nowrap">Mon 12 Oct, 21:00</span></li>
+    </ul>
+    <p style="font-size:16.5px;line-height:1.65;margin:16px 0 0;color:#C7D8DA;text-wrap:pretty">One to watch: Liverpool host Man City on Sunday evening — the biggest armband test of the weekend for the eight managers who rode Haaland in GW5.</p>
+  </section>
+
+  <p style="font-family:'IBM Plex Mono',ui-monospace,monospace;font-size:11px;line-height:1.8;color:#7E9AA0;border-top:1px solid #1E3A42;padding-top:18px;margin:36px 0 0">Final standings, chips, captains and bench points pulled from the official FPL API for league <span style="background:#102A31;border:1px solid #1E3A42;padding:1px 5px;color:#EAF2F0">792878</span> — Gameweek 5 is finished and bonus-confirmed. GW6 fixtures and deadline from the FPL API, shown in SAST. Post-international-break injury news via Fantasy Football Hub (updated 7 October 2026).</p>
+
+  
+</div>
+</div>
+
+
+<script>
+(function () {
+  var cards = document.querySelectorAll('.gz-card');
+  Array.prototype.forEach.call(cards, function (card) {
+    function flip() {
+      var f = card.querySelector('.gz-face-front'), b = card.querySelector('.gz-face-back');
+      var hidden = getComputedStyle(b).display === 'none';
+      b.style.display = hidden ? 'grid' : 'none';
+      f.style.display = hidden ? 'none' : 'grid';
+    }
+    card.addEventListener('click', flip);
+    card.addEventListener('keydown', function (e) {
+      if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); flip(); }
+    });
+  });
+})();
+</script>
+</body>
+</html>
